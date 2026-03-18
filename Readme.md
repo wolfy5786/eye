@@ -1,4 +1,4 @@
-# 🦅 Eye AI
+#  Eye AI
 
 > **🏆 Winner: Best Use of Google Gemini API at HackRUC**
 
