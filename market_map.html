@@ -1,0 +1,5559 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f708ba9dd3b1611f76ed153de7a2b770 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_f708ba9dd3b1611f76ed153de7a2b770" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_f708ba9dd3b1611f76ed153de7a2b770 = L.map(
+                "map_f708ba9dd3b1611f76ed153de7a2b770",
+                {
+                    center: [40.75, -73.7],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 10,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d8ca592d1e9a5ac53bb0ce1a46c7951a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d8ca592d1e9a5ac53bb0ce1a46c7951a.addTo(map_f708ba9dd3b1611f76ed153de7a2b770);
+        
+    
+            var marker_cluster_17db551e8d72089a69eb261e15b02ab3 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_53f51d1596efb57bdc09d68db554bfc7 = L.marker(
+                [40.90151, -73.84702],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_3452501edb6c9a1ee9bae27471724304 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d467f5f4213eb757118b3c2a7054d3d = $(`<div id="html_2d467f5f4213eb757118b3c2a7054d3d" style="width: 100.0%; height: 100.0%;">     <b>Bissel Gardens Farmers' Market-Sat</b><br>     Baychester Ave and East 241st St<br>     Bronx              <br><a href="http://www.bisselgardens.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_3452501edb6c9a1ee9bae27471724304.setContent(html_2d467f5f4213eb757118b3c2a7054d3d);
+            
+        
+
+        marker_53f51d1596efb57bdc09d68db554bfc7.bindPopup(popup_3452501edb6c9a1ee9bae27471724304)
+        ;
+
+        
+    
+    
+            marker_53f51d1596efb57bdc09d68db554bfc7.bindTooltip(
+                `<div>
+                     Bissel Gardens Farmers' Market-Sat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d06313778ff3355f663fb0b48f8f183a = L.marker(
+                [40.82554, -73.91838],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_c40c3a9326ad60e0cf4afb28456ecea9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d10b3cfdeed2add62ade1c049a25bbdc = $(`<div id="html_d10b3cfdeed2add62ade1c049a25bbdc" style="width: 100.0%; height: 100.0%;">     <b>Bronx Borough Hall Greenmarket</b><br>     900 Concourse Plaza<br>     Bronx              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_c40c3a9326ad60e0cf4afb28456ecea9.setContent(html_d10b3cfdeed2add62ade1c049a25bbdc);
+            
+        
+
+        marker_d06313778ff3355f663fb0b48f8f183a.bindPopup(popup_c40c3a9326ad60e0cf4afb28456ecea9)
+        ;
+
+        
+    
+    
+            marker_d06313778ff3355f663fb0b48f8f183a.bindTooltip(
+                `<div>
+                     Bronx Borough Hall Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b81427262a4119ff72e77be2f469604a = L.marker(
+                [40.83256, -73.9192],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_d7ec9cf4e4323bd45ed0f6ee06398919 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_303e2d72d45ea24367a21a3502c15d07 = $(`<div id="html_303e2d72d45ea24367a21a3502c15d07" style="width: 100.0%; height: 100.0%;">     <b>BronxWorks Farm Stand</b><br>     1130 Grand Concourse<br>     Bronx     </div>`)[0];
+                popup_d7ec9cf4e4323bd45ed0f6ee06398919.setContent(html_303e2d72d45ea24367a21a3502c15d07);
+            
+        
+
+        marker_b81427262a4119ff72e77be2f469604a.bindPopup(popup_d7ec9cf4e4323bd45ed0f6ee06398919)
+        ;
+
+        
+    
+    
+            marker_b81427262a4119ff72e77be2f469604a.bindTooltip(
+                `<div>
+                     BronxWorks Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_602175222c18a612019ae1f5824fcf93 = L.marker(
+                [40.8437, -73.88992],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_7bb130868b3719733c2b5d9f145a7735 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e790a698a8aa28bb9cc777bed3c7fa3 = $(`<div id="html_2e790a698a8aa28bb9cc777bed3c7fa3" style="width: 100.0%; height: 100.0%;">     <b>Children's Aid-Whitney Young Jr Campus</b><br>     1919 Prospect Avenue<br>     Bronx              <br><a href="http://childrensaidnyc.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_7bb130868b3719733c2b5d9f145a7735.setContent(html_2e790a698a8aa28bb9cc777bed3c7fa3);
+            
+        
+
+        marker_602175222c18a612019ae1f5824fcf93.bindPopup(popup_7bb130868b3719733c2b5d9f145a7735)
+        ;
+
+        
+    
+    
+            marker_602175222c18a612019ae1f5824fcf93.bindTooltip(
+                `<div>
+                     Children's Aid-Whitney Young Jr Campus
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_20965b84516537306507fa94e038e04e = L.marker(
+                [40.88504, -73.84314],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_468d1b0f7091a6de6adf0c1094d5a00a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0ecb57c2c8108548aa44fd3d9a327faf = $(`<div id="html_0ecb57c2c8108548aa44fd3d9a327faf" style="width: 100.0%; height: 100.0%;">     <b>Eastchester GrowNYC Farm Stand</b><br>     E 229th St at Schieffelin Ave<br>     Bronx              <br><a href="http://www.grownyc.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_468d1b0f7091a6de6adf0c1094d5a00a.setContent(html_0ecb57c2c8108548aa44fd3d9a327faf);
+            
+        
+
+        marker_20965b84516537306507fa94e038e04e.bindPopup(popup_468d1b0f7091a6de6adf0c1094d5a00a)
+        ;
+
+        
+    
+    
+            marker_20965b84516537306507fa94e038e04e.bindTooltip(
+                `<div>
+                     Eastchester GrowNYC Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4df1a7d29d54608222f47141242845a4 = L.marker(
+                [40.84009, -73.9166],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_96e720c59b8e5a76a3a1a49fc7e2ea3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d64a2735d775803bd72a59fd8811a842 = $(`<div id="html_d64a2735d775803bd72a59fd8811a842" style="width: 100.0%; height: 100.0%;">     <b>est</b><br>     1411 Townsend Ave<br>     Bronx              <br><a href="http://www.newsettlement.org/170FarmStand" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_96e720c59b8e5a76a3a1a49fc7e2ea3e.setContent(html_d64a2735d775803bd72a59fd8811a842);
+            
+        
+
+        marker_4df1a7d29d54608222f47141242845a4.bindPopup(popup_96e720c59b8e5a76a3a1a49fc7e2ea3e)
+        ;
+
+        
+    
+    
+            marker_4df1a7d29d54608222f47141242845a4.bindTooltip(
+                `<div>
+                     est
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_565016bfb59039829feb32c3768306e3 = L.marker(
+                [40.87025, -73.83097],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_b7669e59cc21c470818a7911278216b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ba5a108515221e18d468ae0d77fd7f8a = $(`<div id="html_ba5a108515221e18d468ae0d77fd7f8a" style="width: 100.0%; height: 100.0%;">     <b>Harvest Home Co-op City Farmers' Market</b><br>     21 Asch Loop<br>     Bronx              <br><a href="http://www.harvesthomefm.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_b7669e59cc21c470818a7911278216b2.setContent(html_ba5a108515221e18d468ae0d77fd7f8a);
+            
+        
+
+        marker_565016bfb59039829feb32c3768306e3.bindPopup(popup_b7669e59cc21c470818a7911278216b2)
+        ;
+
+        
+    
+    
+            marker_565016bfb59039829feb32c3768306e3.bindTooltip(
+                `<div>
+                     Harvest Home Co-op City Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7e6d6b981df073822116db2ceebaef28 = L.marker(
+                [40.81323, -73.88711],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_4699ac9157d2f82719e36efb6edc564e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_53fab09b1b4c97a6fd3572f7e54eb457 = $(`<div id="html_53fab09b1b4c97a6fd3572f7e54eb457" style="width: 100.0%; height: 100.0%;">     <b>Harvest Home Hunts Point Farmers' Market</b><br>     884 Southern Blvd.<br>     Bronx              <br><a href="http://www.harvesthomefm.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_4699ac9157d2f82719e36efb6edc564e.setContent(html_53fab09b1b4c97a6fd3572f7e54eb457);
+            
+        
+
+        marker_7e6d6b981df073822116db2ceebaef28.bindPopup(popup_4699ac9157d2f82719e36efb6edc564e)
+        ;
+
+        
+    
+    
+            marker_7e6d6b981df073822116db2ceebaef28.bindTooltip(
+                `<div>
+                     Harvest Home Hunts Point Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_20e9be8e6a2baae599af9d4d75f1a51b = L.marker(
+                [40.85738, -73.84631],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_b154e248c76225d0d0fd16f6b3e6402a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e15d6a45c088da3111ec5a09c59dc3b2 = $(`<div id="html_e15d6a45c088da3111ec5a09c59dc3b2" style="width: 100.0%; height: 100.0%;">     <b>Harvest Home Jacobi Hospital Fri Farmers' Market</b><br>     1400 Pelham Parkway<br>     Bronx              <br><a href="http://www.harvesthomefm.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_b154e248c76225d0d0fd16f6b3e6402a.setContent(html_e15d6a45c088da3111ec5a09c59dc3b2);
+            
+        
+
+        marker_20e9be8e6a2baae599af9d4d75f1a51b.bindPopup(popup_b154e248c76225d0d0fd16f6b3e6402a)
+        ;
+
+        
+    
+    
+            marker_20e9be8e6a2baae599af9d4d75f1a51b.bindTooltip(
+                `<div>
+                     Harvest Home Jacobi Hospital Fri Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_efa55b90d0163d2d90f853a2a85e30b0 = L.marker(
+                [40.84305, -73.90947],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_479d84ee697e24b09377fac627148dee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b5f46baf2c74cab6633773abbc9e5c71 = $(`<div id="html_b5f46baf2c74cab6633773abbc9e5c71" style="width: 100.0%; height: 100.0%;">     <b>Harvest Home Mt. Eden Farmers' Market</b><br>     1601 Morris Avenue<br>     Bronx              <br><a href="http://www.harvesthomefm.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_479d84ee697e24b09377fac627148dee.setContent(html_b5f46baf2c74cab6633773abbc9e5c71);
+            
+        
+
+        marker_efa55b90d0163d2d90f853a2a85e30b0.bindPopup(popup_479d84ee697e24b09377fac627148dee)
+        ;
+
+        
+    
+    
+            marker_efa55b90d0163d2d90f853a2a85e30b0.bindTooltip(
+                `<div>
+                     Harvest Home Mt. Eden Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_77915fae26d31f3b83edaf834db615bf = L.marker(
+                [40.88046, -73.88385],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_a216bffa70512fac3a27c6bee3ef7b1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6967d8d1653d2dfcb1ca1e7c5d2cc1fa = $(`<div id="html_6967d8d1653d2dfcb1ca1e7c5d2cc1fa" style="width: 100.0%; height: 100.0%;">     <b>Harvest Home N Central Bronx Farmers' Market</b><br>     1 W Moshulu Pkwy N<br>     Bronx              <br><a href="http://www.harvesthomefm.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_a216bffa70512fac3a27c6bee3ef7b1e.setContent(html_6967d8d1653d2dfcb1ca1e7c5d2cc1fa);
+            
+        
+
+        marker_77915fae26d31f3b83edaf834db615bf.bindPopup(popup_a216bffa70512fac3a27c6bee3ef7b1e)
+        ;
+
+        
+    
+    
+            marker_77915fae26d31f3b83edaf834db615bf.bindTooltip(
+                `<div>
+                     Harvest Home N Central Bronx Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_06c32ebf9a61efab83889455bd19cdea = L.marker(
+                [40.88146, -73.88693],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_685c83c3b85bed0a140c0ebf163c4084 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b6c5f6e0022ff41d545405282d0ca99 = $(`<div id="html_3b6c5f6e0022ff41d545405282d0ca99" style="width: 100.0%; height: 100.0%;">     <b>James Baldwin OLC Farmers' Market</b><br>     100 West Mosholu Parkway South<br>     Bronx              <br><a href="http://www.jamesbaldwinoutdoorlearningcenter.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_685c83c3b85bed0a140c0ebf163c4084.setContent(html_3b6c5f6e0022ff41d545405282d0ca99);
+            
+        
+
+        marker_06c32ebf9a61efab83889455bd19cdea.bindPopup(popup_685c83c3b85bed0a140c0ebf163c4084)
+        ;
+
+        
+    
+    
+            marker_06c32ebf9a61efab83889455bd19cdea.bindTooltip(
+                `<div>
+                     James Baldwin OLC Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f38a50d1c1f2788fd7bacf0ca27d32ec = L.marker(
+                [40.84643, -73.89334],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_226591c886183264d4aeae72e4640d34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6de9f953be45c932c21d4709c8c3aa43 = $(`<div id="html_6de9f953be45c932c21d4709c8c3aa43" style="width: 100.0%; height: 100.0%;">     <b>La Familia Verde Farmers' Market</b><br>     East Tremont Ave and Arthur Ave<br>     Bronx              <br><a href="http://www.lafamiliaverde.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_226591c886183264d4aeae72e4640d34.setContent(html_6de9f953be45c932c21d4709c8c3aa43);
+            
+        
+
+        marker_f38a50d1c1f2788fd7bacf0ca27d32ec.bindPopup(popup_226591c886183264d4aeae72e4640d34)
+        ;
+
+        
+    
+    
+            marker_f38a50d1c1f2788fd7bacf0ca27d32ec.bindTooltip(
+                `<div>
+                     La Familia Verde Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_aa5593104587c3b4699a5f5feeced7bb = L.marker(
+                [40.8433, -73.92213],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_f9af0a8f425d0d76912b9651b58ebd5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_669ee788201b9bbefe407703ec184d34 = $(`<div id="html_669ee788201b9bbefe407703ec184d34" style="width: 100.0%; height: 100.0%;">     <b>La Familia Verde Highbridge Farmers' Market</b><br>     1430 Plimpton Ave<br>     Bronx              <br><a href="http://lafamiliaverde.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_f9af0a8f425d0d76912b9651b58ebd5d.setContent(html_669ee788201b9bbefe407703ec184d34);
+            
+        
+
+        marker_aa5593104587c3b4699a5f5feeced7bb.bindPopup(popup_f9af0a8f425d0d76912b9651b58ebd5d)
+        ;
+
+        
+    
+    
+            marker_aa5593104587c3b4699a5f5feeced7bb.bindTooltip(
+                `<div>
+                     La Familia Verde Highbridge Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_24750869a95c7ee556b942708626d1f4 = L.marker(
+                [40.82521, -73.89173],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_0d8e5f2c4263a3c3162a445e17778188 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_046120f0b05745a0d3077c0df11b9273 = $(`<div id="html_046120f0b05745a0d3077c0df11b9273" style="width: 100.0%; height: 100.0%;">     <b>La Familia Verde Southern Blvd. Farmers' Market</b><br>     1070 Southern Boulevard<br>     Bronx              <br><a href="http://lafamiliaverde.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_0d8e5f2c4263a3c3162a445e17778188.setContent(html_046120f0b05745a0d3077c0df11b9273);
+            
+        
+
+        marker_24750869a95c7ee556b942708626d1f4.bindPopup(popup_0d8e5f2c4263a3c3162a445e17778188)
+        ;
+
+        
+    
+    
+            marker_24750869a95c7ee556b942708626d1f4.bindTooltip(
+                `<div>
+                     La Familia Verde Southern Blvd. Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a297ef5cc280034796ed397874f7f7f6 = L.marker(
+                [40.8174, -73.92276],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_af98f48b6b98e56ff01e3fd7500df4ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc45b0fa733ea3bc837b520157233d0f = $(`<div id="html_dc45b0fa733ea3bc837b520157233d0f" style="width: 100.0%; height: 100.0%;">     <b>Lincoln Hospital Fri Greenmarket</b><br>     234 East 149th Street<br>     Bronx              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_af98f48b6b98e56ff01e3fd7500df4ef.setContent(html_dc45b0fa733ea3bc837b520157233d0f);
+            
+        
+
+        marker_a297ef5cc280034796ed397874f7f7f6.bindPopup(popup_af98f48b6b98e56ff01e3fd7500df4ef)
+        ;
+
+        
+    
+    
+            marker_a297ef5cc280034796ed397874f7f7f6.bindTooltip(
+                `<div>
+                     Lincoln Hospital Fri Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7b0f20afeed7120e40a4f49635deb58c = L.marker(
+                [40.81754, -73.9241],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_7767c7354ce1759c3705c531dd57e504 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6dfebd955501b06ecd2f692acc1ab914 = $(`<div id="html_6dfebd955501b06ecd2f692acc1ab914" style="width: 100.0%; height: 100.0%;">     <b>Lincoln Hospital Tue Greenmarket</b><br>     234 East 149th Street<br>     Bronx              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_7767c7354ce1759c3705c531dd57e504.setContent(html_6dfebd955501b06ecd2f692acc1ab914);
+            
+        
+
+        marker_7b0f20afeed7120e40a4f49635deb58c.bindPopup(popup_7767c7354ce1759c3705c531dd57e504)
+        ;
+
+        
+    
+    
+            marker_7b0f20afeed7120e40a4f49635deb58c.bindTooltip(
+                `<div>
+                     Lincoln Hospital Tue Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a51cef1fbb63e284e3cb634d85f0036f = L.marker(
+                [40.8547, -73.91035],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_42ecd14a13972021eefb708aa94c3276 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48a93789c900ff8f3d547b3b3548a201 = $(`<div id="html_48a93789c900ff8f3d547b3b3548a201" style="width: 100.0%; height: 100.0%;">     <b>Morris Heights GrowNYC Farm Stand</b><br>     85 W Burnside Ave<br>     Bronx              <br><a href="http://grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_42ecd14a13972021eefb708aa94c3276.setContent(html_48a93789c900ff8f3d547b3b3548a201);
+            
+        
+
+        marker_a51cef1fbb63e284e3cb634d85f0036f.bindPopup(popup_42ecd14a13972021eefb708aa94c3276)
+        ;
+
+        
+    
+    
+            marker_a51cef1fbb63e284e3cb634d85f0036f.bindTooltip(
+                `<div>
+                     Morris Heights GrowNYC Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f6e0f3250fe574b40703a29cbf3d0b98 = L.marker(
+                [40.80979, -73.91585],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_860188fc3b1c2d98f53780e55b72bf59 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cc977ce55b40de9d4af15d48052009f = $(`<div id="html_6cc977ce55b40de9d4af15d48052009f" style="width: 100.0%; height: 100.0%;">     <b>Mott Haven Farm Stand</b><br>     545 East 142nd Street<br>     Bronx              <br><a href="http://www.bronxworks.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_860188fc3b1c2d98f53780e55b72bf59.setContent(html_6cc977ce55b40de9d4af15d48052009f);
+            
+        
+
+        marker_f6e0f3250fe574b40703a29cbf3d0b98.bindPopup(popup_860188fc3b1c2d98f53780e55b72bf59)
+        ;
+
+        
+    
+    
+            marker_f6e0f3250fe574b40703a29cbf3d0b98.bindTooltip(
+                `<div>
+                     Mott Haven Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cca683d778a88462a933d6544c6fcb48 = L.marker(
+                [40.82172, -73.92524],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_27f2c951d9b3d8c50376d123cd17c592 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_625b951ea9041e8f6964afa2b892bddb = $(`<div id="html_625b951ea9041e8f6964afa2b892bddb" style="width: 100.0%; height: 100.0%;">     <b>New Roots Community Farm Stand</b><br>     670 Grand Concourse<br>     Bronx     </div>`)[0];
+                popup_27f2c951d9b3d8c50376d123cd17c592.setContent(html_625b951ea9041e8f6964afa2b892bddb);
+            
+        
+
+        marker_cca683d778a88462a933d6544c6fcb48.bindPopup(popup_27f2c951d9b3d8c50376d123cd17c592)
+        ;
+
+        
+    
+    
+            marker_cca683d778a88462a933d6544c6fcb48.bindTooltip(
+                `<div>
+                     New Roots Community Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_aecf04d7ee2ec96b81f61d50aa1ec1a4 = L.marker(
+                [40.86689, -73.88061],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_c26a008fed405df46dcc4ef275d2f55a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a42c6dc511c7bcc978098aeafff82bcc = $(`<div id="html_a42c6dc511c7bcc978098aeafff82bcc" style="width: 100.0%; height: 100.0%;">     <b>New York Botanical Garden Farmers' Market</b><br>     2900 Southern Boulevard<br>     Bronx     </div>`)[0];
+                popup_c26a008fed405df46dcc4ef275d2f55a.setContent(html_a42c6dc511c7bcc978098aeafff82bcc);
+            
+        
+
+        marker_aecf04d7ee2ec96b81f61d50aa1ec1a4.bindPopup(popup_c26a008fed405df46dcc4ef275d2f55a)
+        ;
+
+        
+    
+    
+            marker_aecf04d7ee2ec96b81f61d50aa1ec1a4.bindTooltip(
+                `<div>
+                     New York Botanical Garden Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ddcd37e44468a14e7b5f4493a7ed52b5 = L.marker(
+                [40.88223, -73.88048],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_1d2f97193509806c152c9bd47e2d4121 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4e0187d8847aeb17d4e3725f6f7ffe0b = $(`<div id="html_4e0187d8847aeb17d4e3725f6f7ffe0b" style="width: 100.0%; height: 100.0%;">     <b>Norwood GrowNYC Farm Stand</b><br>     Dekalb Ave. and East Gun Hill Rd.<br>     Bronx              <br><a href="https://www.grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_1d2f97193509806c152c9bd47e2d4121.setContent(html_4e0187d8847aeb17d4e3725f6f7ffe0b);
+            
+        
+
+        marker_ddcd37e44468a14e7b5f4493a7ed52b5.bindPopup(popup_1d2f97193509806c152c9bd47e2d4121)
+        ;
+
+        
+    
+    
+            marker_ddcd37e44468a14e7b5f4493a7ed52b5.bindTooltip(
+                `<div>
+                     Norwood GrowNYC Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_60045ba1c78e1878706fa277fffbb3ef = L.marker(
+                [40.830746, -73.886882],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_d414fda53ac293d1a407c509ef6ea442 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aebf63896302ba1e05d7ee33ff5e6315 = $(`<div id="html_aebf63896302ba1e05d7ee33ff5e6315" style="width: 100.0%; height: 100.0%;">     <b>P811x Healthy Choice Farm Stand</b><br>     1434 Longfellow Ave.<br>     Bronx     </div>`)[0];
+                popup_d414fda53ac293d1a407c509ef6ea442.setContent(html_aebf63896302ba1e05d7ee33ff5e6315);
+            
+        
+
+        marker_60045ba1c78e1878706fa277fffbb3ef.bindPopup(popup_d414fda53ac293d1a407c509ef6ea442)
+        ;
+
+        
+    
+    
+            marker_60045ba1c78e1878706fa277fffbb3ef.bindTooltip(
+                `<div>
+                     P811x Healthy Choice Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_750f7e76a5639188171b347612f26681 = L.marker(
+                [40.82975, -73.87377],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_235082387dbb87b2303defd75b765db8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23be55d17ce4f2da16daa89a325827dd = $(`<div id="html_23be55d17ce4f2da16daa89a325827dd" style="width: 100.0%; height: 100.0%;">     <b>Parkchester Greenmarket</b><br>     1878 Cross Bronx Service Road South<br>     Bronx              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_235082387dbb87b2303defd75b765db8.setContent(html_23be55d17ce4f2da16daa89a325827dd);
+            
+        
+
+        marker_750f7e76a5639188171b347612f26681.bindPopup(popup_235082387dbb87b2303defd75b765db8)
+        ;
+
+        
+    
+    
+            marker_750f7e76a5639188171b347612f26681.bindTooltip(
+                `<div>
+                     Parkchester Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d1826c124a76fda6121cfb7b07bbde5f = L.marker(
+                [40.86412, -73.8955],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_f22113547066abe147865dcd229e78bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d86a0becbd21fcf8d57549d3c98593bc = $(`<div id="html_d86a0becbd21fcf8d57549d3c98593bc" style="width: 100.0%; height: 100.0%;">     <b>Poe Park Greenmarket</b><br>     2580 Grand Concourse<br>     Bronx              <br><a href="http://www.grownyc.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_f22113547066abe147865dcd229e78bb.setContent(html_d86a0becbd21fcf8d57549d3c98593bc);
+            
+        
+
+        marker_d1826c124a76fda6121cfb7b07bbde5f.bindPopup(popup_f22113547066abe147865dcd229e78bb)
+        ;
+
+        
+    
+    
+            marker_d1826c124a76fda6121cfb7b07bbde5f.bindTooltip(
+                `<div>
+                     Poe Park Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2dc0c95979a7c26c2f6770db51f5a6f6 = L.marker(
+                [40.64081, -74.01836],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_d0db8af994fda89fc81084f7b258c13d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae786ad754443cc48d0bb7f90f9231a8 = $(`<div id="html_ae786ad754443cc48d0bb7f90f9231a8" style="width: 100.0%; height: 100.0%;">     <b>4th Ave. Sunset Park Greenmarket</b><br>     4th Ave and 60th St<br>     Brooklyn              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_d0db8af994fda89fc81084f7b258c13d.setContent(html_ae786ad754443cc48d0bb7f90f9231a8);
+            
+        
+
+        marker_2dc0c95979a7c26c2f6770db51f5a6f6.bindPopup(popup_d0db8af994fda89fc81084f7b258c13d)
+        ;
+
+        
+    
+    
+            marker_2dc0c95979a7c26c2f6770db51f5a6f6.bindTooltip(
+                `<div>
+                     4th Ave. Sunset Park Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0e846764f1e69368fafd2481f5dd3b7e = L.marker(
+                [40.64693, -74.00447],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_68c94e6307809032129bc0b5dc29e346 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f6934075ae6d0470bd1f3ec78363f41 = $(`<div id="html_2f6934075ae6d0470bd1f3ec78363f41" style="width: 100.0%; height: 100.0%;">     <b>7th Ave. Sunset Park Greenmarket</b><br>     602 44th Street<br>     Brooklyn              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_68c94e6307809032129bc0b5dc29e346.setContent(html_2f6934075ae6d0470bd1f3ec78363f41);
+            
+        
+
+        marker_0e846764f1e69368fafd2481f5dd3b7e.bindPopup(popup_68c94e6307809032129bc0b5dc29e346)
+        ;
+
+        
+    
+    
+            marker_0e846764f1e69368fafd2481f5dd3b7e.bindTooltip(
+                `<div>
+                     7th Ave. Sunset Park Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8ecdb73db97d146e185d8cad8b802b2d = L.marker(
+                [40.66055, -73.97984],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_501f38cf58b099f47b5c16ecce1e717b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_707af09e5d6eb892b247e6867464a60a = $(`<div id="html_707af09e5d6eb892b247e6867464a60a" style="width: 100.0%; height: 100.0%;">     <b>Bartel-Pritchard Square Sun Greenmarket</b><br>     205 Prospect Park West<br>     Brooklyn              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_501f38cf58b099f47b5c16ecce1e717b.setContent(html_707af09e5d6eb892b247e6867464a60a);
+            
+        
+
+        marker_8ecdb73db97d146e185d8cad8b802b2d.bindPopup(popup_501f38cf58b099f47b5c16ecce1e717b)
+        ;
+
+        
+    
+    
+            marker_8ecdb73db97d146e185d8cad8b802b2d.bindTooltip(
+                `<div>
+                     Bartel-Pritchard Square Sun Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4a7458a92390f0d0a10cb74c94c73fc4 = L.marker(
+                [40.66055, -73.97984],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_4c5d1fb7366c3b2a8acfacc38e8476e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6f57a2529568b6e6afc20c138cd03a8 = $(`<div id="html_b6f57a2529568b6e6afc20c138cd03a8" style="width: 100.0%; height: 100.0%;">     <b>Bartel-Pritchard Square Wed Greenmarket</b><br>     205 Prospect Park West<br>     Brooklyn              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_4c5d1fb7366c3b2a8acfacc38e8476e2.setContent(html_b6f57a2529568b6e6afc20c138cd03a8);
+            
+        
+
+        marker_4a7458a92390f0d0a10cb74c94c73fc4.bindPopup(popup_4c5d1fb7366c3b2a8acfacc38e8476e2)
+        ;
+
+        
+    
+    
+            marker_4a7458a92390f0d0a10cb74c94c73fc4.bindTooltip(
+                `<div>
+                     Bartel-Pritchard Square Wed Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b640548e9bfa36925968dbea7aa6b652 = L.marker(
+                [40.61761, -74.03363],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_946d158d6c5a66b2749dcadb8324716d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1a7337592c8df1d637a32f555fc8fb8 = $(`<div id="html_b1a7337592c8df1d637a32f555fc8fb8" style="width: 100.0%; height: 100.0%;">     <b>Bay Ridge Greenmarket</b><br>     9408 3rd Avenue<br>     Brooklyn              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_946d158d6c5a66b2749dcadb8324716d.setContent(html_b1a7337592c8df1d637a32f555fc8fb8);
+            
+        
+
+        marker_b640548e9bfa36925968dbea7aa6b652.bindPopup(popup_946d158d6c5a66b2749dcadb8324716d)
+        ;
+
+        
+    
+    
+            marker_b640548e9bfa36925968dbea7aa6b652.bindTooltip(
+                `<div>
+                     Bay Ridge Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_19da0005103a31e14c9f255d565a28d1 = L.marker(
+                [40.68134, -73.93467],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_5aba0c465174194243f924d15520bea9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b47a6b9c5b2c381b8eb99821c68854a = $(`<div id="html_9b47a6b9c5b2c381b8eb99821c68854a" style="width: 100.0%; height: 100.0%;">     <b>Bed-Stuy GrowNYC Farmstand</b><br>     Decatur Street & Lewis Ave<br>     Brooklyn              <br><a href="https://www.grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_5aba0c465174194243f924d15520bea9.setContent(html_9b47a6b9c5b2c381b8eb99821c68854a);
+            
+        
+
+        marker_19da0005103a31e14c9f255d565a28d1.bindPopup(popup_5aba0c465174194243f924d15520bea9)
+        ;
+
+        
+    
+    
+            marker_19da0005103a31e14c9f255d565a28d1.bindTooltip(
+                `<div>
+                     Bed-Stuy GrowNYC Farmstand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ab90d4824cca1379dbf8e65947d7e1b6 = L.marker(
+                [40.60987, -73.99966],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_06e209442444dd8cce1d20959b1b7842 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_08af428af4d45ef1b7b36030541437bc = $(`<div id="html_08af428af4d45ef1b7b36030541437bc" style="width: 100.0%; height: 100.0%;">     <b>Bensonhurst Greenmarket</b><br>     8118 18th Ave<br>     Brooklyn              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_06e209442444dd8cce1d20959b1b7842.setContent(html_08af428af4d45ef1b7b36030541437bc);
+            
+        
+
+        marker_ab90d4824cca1379dbf8e65947d7e1b6.bindPopup(popup_06e209442444dd8cce1d20959b1b7842)
+        ;
+
+        
+    
+    
+            marker_ab90d4824cca1379dbf8e65947d7e1b6.bindTooltip(
+                `<div>
+                     Bensonhurst Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_10b7d4139b8cc936125852f33c64dd8f = L.marker(
+                [40.63349, -73.99022],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_bb587eb19741a4f3fc2125c6a2a0d184 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_228a31a140f13e991c4f2612db8b30b4 = $(`<div id="html_228a31a140f13e991c4f2612db8b30b4" style="width: 100.0%; height: 100.0%;">     <b>Boro Park Greenmarket</b><br>     4910 14th Ave<br>     Brooklyn              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_bb587eb19741a4f3fc2125c6a2a0d184.setContent(html_228a31a140f13e991c4f2612db8b30b4);
+            
+        
+
+        marker_10b7d4139b8cc936125852f33c64dd8f.bindPopup(popup_bb587eb19741a4f3fc2125c6a2a0d184)
+        ;
+
+        
+    
+    
+            marker_10b7d4139b8cc936125852f33c64dd8f.bindTooltip(
+                `<div>
+                     Boro Park Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_95da694e6c9f3b41acd4ea7b58f109fb = L.marker(
+                [40.69416, -73.99076],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_5990c6c93d771f6eb2b782fe4c25824d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea4a07675d67519666c378244b4eb2b1 = $(`<div id="html_ea4a07675d67519666c378244b4eb2b1" style="width: 100.0%; height: 100.0%;">     <b>Brooklyn Borough Hall Saturday Greenmarket</b><br>     211 Montague Street<br>     Brooklyn              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_5990c6c93d771f6eb2b782fe4c25824d.setContent(html_ea4a07675d67519666c378244b4eb2b1);
+            
+        
+
+        marker_95da694e6c9f3b41acd4ea7b58f109fb.bindPopup(popup_5990c6c93d771f6eb2b782fe4c25824d)
+        ;
+
+        
+    
+    
+            marker_95da694e6c9f3b41acd4ea7b58f109fb.bindTooltip(
+                `<div>
+                     Brooklyn Borough Hall Saturday Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_794826a51bb7518d75c1480a64ca4b13 = L.marker(
+                [40.69416, -73.99076],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_6022eee3aa11ab7caa659bd8767e7c65 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ea6e56ff27d8c0a2f66f539df1c1d7b = $(`<div id="html_5ea6e56ff27d8c0a2f66f539df1c1d7b" style="width: 100.0%; height: 100.0%;">     <b>Brooklyn Borough Hall Tuesday Greenmarket</b><br>     211 Montague Street<br>     Brooklyn              <br><a href="http://www.grownyc.org/greenmarket/brooklyn/boro-hall-sa" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_6022eee3aa11ab7caa659bd8767e7c65.setContent(html_5ea6e56ff27d8c0a2f66f539df1c1d7b);
+            
+        
+
+        marker_794826a51bb7518d75c1480a64ca4b13.bindPopup(popup_6022eee3aa11ab7caa659bd8767e7c65)
+        ;
+
+        
+    
+    
+            marker_794826a51bb7518d75c1480a64ca4b13.bindTooltip(
+                `<div>
+                     Brooklyn Borough Hall Tuesday Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8a9cb24cf5c4ca7f3d06fa8972b33367 = L.marker(
+                [40.66857, -73.91826],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_260eac7e08ef35846ff025e7a0b78cbe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9d58121f11b89710ee4c923c18e72e9 = $(`<div id="html_b9d58121f11b89710ee4c923c18e72e9" style="width: 100.0%; height: 100.0%;">     <b>Brownsville Pitkin GrowNYC Farm Stand</b><br>     Pitkin Avenue and Thomas Boyland Street<br>     Brooklyn              <br><a href="https://www.grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_260eac7e08ef35846ff025e7a0b78cbe.setContent(html_b9d58121f11b89710ee4c923c18e72e9);
+            
+        
+
+        marker_8a9cb24cf5c4ca7f3d06fa8972b33367.bindPopup(popup_260eac7e08ef35846ff025e7a0b78cbe)
+        ;
+
+        
+    
+    
+            marker_8a9cb24cf5c4ca7f3d06fa8972b33367.bindTooltip(
+                `<div>
+                     Brownsville Pitkin GrowNYC Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9517673f13a39f418c3304eff23bc910 = L.marker(
+                [40.68036, -73.99536],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_599999328efa3efa572b49ce373f6f17 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e692cce7cd1c80d68d719d9c66fe652b = $(`<div id="html_e692cce7cd1c80d68d719d9c66fe652b" style="width: 100.0%; height: 100.0%;">     <b>Carroll Gardens Greenmarket</b><br>     330 Smith Street<br>     Brooklyn              <br><a href="http://www.grownyc.org/greenmarket/brooklyn/carroll-gardens" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_599999328efa3efa572b49ce373f6f17.setContent(html_e692cce7cd1c80d68d719d9c66fe652b);
+            
+        
+
+        marker_9517673f13a39f418c3304eff23bc910.bindPopup(popup_599999328efa3efa572b49ce373f6f17)
+        ;
+
+        
+    
+    
+            marker_9517673f13a39f418c3304eff23bc910.bindTooltip(
+                `<div>
+                     Carroll Gardens Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3f1d3712bd904348ed67ee6e560a1337 = L.marker(
+                [40.64071, -73.9659],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_9a571057daf1219eb5f8e4eff11f68b6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d418886d95e8765f545b8c1d3bd498f = $(`<div id="html_2d418886d95e8765f545b8c1d3bd498f" style="width: 100.0%; height: 100.0%;">     <b>Cortelyou Greenmarket</b><br>     1305 Cortelyou Road<br>     Brooklyn              <br><a href="https://www.grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_9a571057daf1219eb5f8e4eff11f68b6.setContent(html_2d418886d95e8765f545b8c1d3bd498f);
+            
+        
+
+        marker_3f1d3712bd904348ed67ee6e560a1337.bindPopup(popup_9a571057daf1219eb5f8e4eff11f68b6)
+        ;
+
+        
+    
+    
+            marker_3f1d3712bd904348ed67ee6e560a1337.bindTooltip(
+                `<div>
+                     Cortelyou Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e8155b767668c4a4b99ded6bf794f6f3 = L.marker(
+                [40.66629, -73.95081],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_18a7bc0c70552f3303ccd0c2e8688326 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_543cb7df948eff249a517c74e18b4521 = $(`<div id="html_543cb7df948eff249a517c74e18b4521" style="width: 100.0%; height: 100.0%;">     <b>Crown Heights GrowNYC Farm Stand</b><br>     Nostrand Ave and Crown St<br>     Brooklyn              <br><a href="http://grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_18a7bc0c70552f3303ccd0c2e8688326.setContent(html_543cb7df948eff249a517c74e18b4521);
+            
+        
+
+        marker_e8155b767668c4a4b99ded6bf794f6f3.bindPopup(popup_18a7bc0c70552f3303ccd0c2e8688326)
+        ;
+
+        
+    
+    
+            marker_e8155b767668c4a4b99ded6bf794f6f3.bindTooltip(
+                `<div>
+                     Crown Heights GrowNYC Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_09baa0f15fb4774360be5d7c7ae8b7f3 = L.marker(
+                [40.68206, -73.87788],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_687c0f02c8e6e3d04b3aaa75dd1602cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_09e9dae8958c46bcdd0101e1e8a62391 = $(`<div id="html_09e9dae8958c46bcdd0101e1e8a62391" style="width: 100.0%; height: 100.0%;">     <b>Cypress Hills GrowNYC Farm Stand</b><br>     Fulton St. and Logan St.<br>     Brooklyn              <br><a href="https://www.grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_687c0f02c8e6e3d04b3aaa75dd1602cf.setContent(html_09e9dae8958c46bcdd0101e1e8a62391);
+            
+        
+
+        marker_09baa0f15fb4774360be5d7c7ae8b7f3.bindPopup(popup_687c0f02c8e6e3d04b3aaa75dd1602cf)
+        ;
+
+        
+    
+    
+            marker_09baa0f15fb4774360be5d7c7ae8b7f3.bindTooltip(
+                `<div>
+                     Cypress Hills GrowNYC Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2f9f9f0d578a0cf56e272d736e9ebeb3 = L.marker(
+                [40.71455, -73.96777],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_9071ff6cdae0445210d0199ae241a3fb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_289fa96a3f9b1937ed4b279963ae075f = $(`<div id="html_289fa96a3f9b1937ed4b279963ae075f" style="width: 100.0%; height: 100.0%;">     <b>Domino Park Greenmarket</b><br>     River St btwn S 2nd & S 3rd Sts<br>     Brooklyn              <br><a href="https://www.grownyc.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_9071ff6cdae0445210d0199ae241a3fb.setContent(html_289fa96a3f9b1937ed4b279963ae075f);
+            
+        
+
+        marker_2f9f9f0d578a0cf56e272d736e9ebeb3.bindPopup(popup_9071ff6cdae0445210d0199ae241a3fb)
+        ;
+
+        
+    
+    
+            marker_2f9f9f0d578a0cf56e272d736e9ebeb3.bindTooltip(
+                `<div>
+                     Domino Park Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ad847e0bd9d9a9e5af3e2588960364c3 = L.marker(
+                [40.67578, -73.87123],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_7403f5f2bd4fcdada520a3a07cbdf6d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7927958d25823c2eacc62b14663a44c = $(`<div id="html_e7927958d25823c2eacc62b14663a44c" style="width: 100.0%; height: 100.0%;">     <b>East New York Farm Stand</b><br>     404 Pine St<br>     Brooklyn              <br><a href="http://ucceny.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_7403f5f2bd4fcdada520a3a07cbdf6d9.setContent(html_e7927958d25823c2eacc62b14663a44c);
+            
+        
+
+        marker_ad847e0bd9d9a9e5af3e2588960364c3.bindPopup(popup_7403f5f2bd4fcdada520a3a07cbdf6d9)
+        ;
+
+        
+    
+    
+            marker_ad847e0bd9d9a9e5af3e2588960364c3.bindTooltip(
+                `<div>
+                     East New York Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_054e205c14fb5cb5dd47c0cc0dae4b18 = L.marker(
+                [40.66526, -73.88661],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_78da8ac168bd04d377da176d7c7e5606 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0067e54bc6d04715bcb98583213c67ab = $(`<div id="html_0067e54bc6d04715bcb98583213c67ab" style="width: 100.0%; height: 100.0%;">     <b>East New York Farmers' Market</b><br>     620 Schenk Ave<br>     Brooklyn              <br><a href="http://ucceny.org/enyf" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_78da8ac168bd04d377da176d7c7e5606.setContent(html_0067e54bc6d04715bcb98583213c67ab);
+            
+        
+
+        marker_054e205c14fb5cb5dd47c0cc0dae4b18.bindPopup(popup_78da8ac168bd04d377da176d7c7e5606)
+        ;
+
+        
+    
+    
+            marker_054e205c14fb5cb5dd47c0cc0dae4b18.bindTooltip(
+                `<div>
+                     East New York Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d387e083aa8d678c16ef1fec2a9f2287 = L.marker(
+                [40.68975, -73.97299],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_f732dee1391ca9ef3bfdc9ba3ed3c930 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57870a3355ac6cadd65fadca995b62d1 = $(`<div id="html_57870a3355ac6cadd65fadca995b62d1" style="width: 100.0%; height: 100.0%;">     <b>Fort Greene Greenmarket</b><br>     209 Washington Park<br>     Brooklyn              <br><a href="http://www.grownyc.org/greenmarket/brooklyn/fort-greene" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_f732dee1391ca9ef3bfdc9ba3ed3c930.setContent(html_57870a3355ac6cadd65fadca995b62d1);
+            
+        
+
+        marker_d387e083aa8d678c16ef1fec2a9f2287.bindPopup(popup_f732dee1391ca9ef3bfdc9ba3ed3c930)
+        ;
+
+        
+    
+    
+            marker_d387e083aa8d678c16ef1fec2a9f2287.bindTooltip(
+                `<div>
+                     Fort Greene Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6d0276b72b6b0c8626c0cf97019dc970 = L.marker(
+                [40.66062, -73.97943],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_2e31c70e33dfd85c5f4297d469394be7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f28e05350b6ab17610c5432b8b0758d = $(`<div id="html_0f28e05350b6ab17610c5432b8b0758d" style="width: 100.0%; height: 100.0%;">     <b>Grand Army Plaza Greenmarket</b><br>     1 Prospect Park<br>     Brooklyn              <br><a href="http://www.grownyc.org/greenmarket/brooklyn-grand-army-plaza" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_2e31c70e33dfd85c5f4297d469394be7.setContent(html_0f28e05350b6ab17610c5432b8b0758d);
+            
+        
+
+        marker_6d0276b72b6b0c8626c0cf97019dc970.bindPopup(popup_2e31c70e33dfd85c5f4297d469394be7)
+        ;
+
+        
+    
+    
+            marker_6d0276b72b6b0c8626c0cf97019dc970.bindTooltip(
+                `<div>
+                     Grand Army Plaza Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9459d5668616a965aaf2c4a05d6459fe = L.marker(
+                [40.58669, -73.96578],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_6818c5ff6c4efd256d99ae1ae05e6817 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad74931a11c3150aafb77de8ea0e72d4 = $(`<div id="html_ad74931a11c3150aafb77de8ea0e72d4" style="width: 100.0%; height: 100.0%;">     <b>Harvest Home Coney Island Farmers' Market</b><br>     Ocean Pkwy and Avenue Z<br>     Brooklyn              <br><a href="http://www.harvesthomefm.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_6818c5ff6c4efd256d99ae1ae05e6817.setContent(html_ad74931a11c3150aafb77de8ea0e72d4);
+            
+        
+
+        marker_9459d5668616a965aaf2c4a05d6459fe.bindPopup(popup_6818c5ff6c4efd256d99ae1ae05e6817)
+        ;
+
+        
+    
+    
+            marker_9459d5668616a965aaf2c4a05d6459fe.bindTooltip(
+                `<div>
+                     Harvest Home Coney Island Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9761bf77d684153bb5cece50073d5f93 = L.marker(
+                [40.66353, -73.90226],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_9abbb856bee7885e4c7afdd72cb517c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2fa6229d1aff81f7a0231a112e21564b = $(`<div id="html_2fa6229d1aff81f7a0231a112e21564b" style="width: 100.0%; height: 100.0%;">     <b>Isabahlia Farm Stand-Livonia Ave</b><br>     410 Livonia Ave<br>     Brooklyn              <br><a href="http://www.isabahlialoefinc.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_9abbb856bee7885e4c7afdd72cb517c5.setContent(html_2fa6229d1aff81f7a0231a112e21564b);
+            
+        
+
+        marker_9761bf77d684153bb5cece50073d5f93.bindPopup(popup_9abbb856bee7885e4c7afdd72cb517c5)
+        ;
+
+        
+    
+    
+            marker_9761bf77d684153bb5cece50073d5f93.bindTooltip(
+                `<div>
+                     Isabahlia Farm Stand-Livonia Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4f9a0923dc34ed1d4fa100312820badb = L.marker(
+                [40.66751, -73.91021],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_88a82f4f59090cd84ec3adc99101b66c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2dcb3b12411be705e0ca9a58864aef4e = $(`<div id="html_2dcb3b12411be705e0ca9a58864aef4e" style="width: 100.0%; height: 100.0%;">     <b>Isabahlia Farm Stand-Rockaway Ave</b><br>     514 Rockaway Avenue<br>     Brooklyn              <br><a href="http://www.isabahlialoefinc.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_88a82f4f59090cd84ec3adc99101b66c.setContent(html_2dcb3b12411be705e0ca9a58864aef4e);
+            
+        
+
+        marker_4f9a0923dc34ed1d4fa100312820badb.bindPopup(popup_88a82f4f59090cd84ec3adc99101b66c)
+        ;
+
+        
+    
+    
+            marker_4f9a0923dc34ed1d4fa100312820badb.bindTooltip(
+                `<div>
+                     Isabahlia Farm Stand-Rockaway Ave
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_509abdad6a509dcf737c41ae7067cc7d = L.marker(
+                [40.71945, -73.95312],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_7da672227abcffe17850a391594f95e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40c63ca0c0f9093cb53592a924913b5c = $(`<div id="html_40c63ca0c0f9093cb53592a924913b5c" style="width: 100.0%; height: 100.0%;">     <b>McCarren Park Greenmarket</b><br>     228 North 12th Street<br>     Brooklyn              <br><a href="http://www.grownyc.org/greenmarket/brooklyn/greenpoint-sa" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_7da672227abcffe17850a391594f95e7.setContent(html_40c63ca0c0f9093cb53592a924913b5c);
+            
+        
+
+        marker_509abdad6a509dcf737c41ae7067cc7d.bindPopup(popup_7da672227abcffe17850a391594f95e7)
+        ;
+
+        
+    
+    
+            marker_509abdad6a509dcf737c41ae7067cc7d.bindTooltip(
+                `<div>
+                     McCarren Park Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d5c4060b0cd3e9b002149cf674f15581 = L.marker(
+                [40.72483, -73.94432],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_42e590d3da5d092bf6da1a6f08509918 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8ad6ec967f1092d0f4281d80eeb4ecb2 = $(`<div id="html_8ad6ec967f1092d0f4281d80eeb4ecb2" style="width: 100.0%; height: 100.0%;">     <b>McGolrick Park Farmers' Market</b><br>     130 Russell Street<br>     Brooklyn              <br><a href="http://www.downtoearthmarkets.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_42e590d3da5d092bf6da1a6f08509918.setContent(html_8ad6ec967f1092d0f4281d80eeb4ecb2);
+            
+        
+
+        marker_d5c4060b0cd3e9b002149cf674f15581.bindPopup(popup_42e590d3da5d092bf6da1a6f08509918)
+        ;
+
+        
+    
+    
+            marker_d5c4060b0cd3e9b002149cf674f15581.bindTooltip(
+                `<div>
+                     McGolrick Park Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1511297c9a64d9b993b4bd4afe46a72a = L.marker(
+                [40.64075, -73.93906],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_37a3150c4938cd4bfa747811e356f9e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_500d0315658825a0e222243f3418c140 = $(`<div id="html_500d0315658825a0e222243f3418c140" style="width: 100.0%; height: 100.0%;">     <b>Oko Farms Farm Stand</b><br>     604 East 40th Street<br>     Brooklyn     </div>`)[0];
+                popup_37a3150c4938cd4bfa747811e356f9e6.setContent(html_500d0315658825a0e222243f3418c140);
+            
+        
+
+        marker_1511297c9a64d9b993b4bd4afe46a72a.bindPopup(popup_37a3150c4938cd4bfa747811e356f9e6)
+        ;
+
+        
+    
+    
+            marker_1511297c9a64d9b993b4bd4afe46a72a.bindTooltip(
+                `<div>
+                     Oko Farms Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4d2bcfe74f7db23ca4c4817fec576cf3 = L.marker(
+                [40.6722, -73.98379],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_fba1b5e8a5ea451df77d7f2c97d652ee = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f91a101489023323bc6e86918b95437e = $(`<div id="html_f91a101489023323bc6e86918b95437e" style="width: 100.0%; height: 100.0%;">     <b>Park Slope Farmers' Market</b><br>     298 4th Street<br>     Brooklyn              <br><a href="http://www.downtoearthmarkets.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_fba1b5e8a5ea451df77d7f2c97d652ee.setContent(html_f91a101489023323bc6e86918b95437e);
+            
+        
+
+        marker_4d2bcfe74f7db23ca4c4817fec576cf3.bindPopup(popup_fba1b5e8a5ea451df77d7f2c97d652ee)
+        ;
+
+        
+    
+    
+            marker_4d2bcfe74f7db23ca4c4817fec576cf3.bindTooltip(
+                `<div>
+                     Park Slope Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0f585a9fccfd84d4b3ba53afa9094760 = L.marker(
+                [40.71689, -73.98519],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_75fde8f97679c1f1d4deeae0346b72a3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_72a15525be905754cc1eda540f479643 = $(`<div id="html_72a15525be905754cc1eda540f479643" style="width: 100.0%; height: 100.0%;">     <b>Project EATS Essex Market Line Farm Stand</b><br>     156 Broome Street<br>     New York     </div>`)[0];
+                popup_75fde8f97679c1f1d4deeae0346b72a3.setContent(html_72a15525be905754cc1eda540f479643);
+            
+        
+
+        marker_0f585a9fccfd84d4b3ba53afa9094760.bindPopup(popup_75fde8f97679c1f1d4deeae0346b72a3)
+        ;
+
+        
+    
+    
+            marker_0f585a9fccfd84d4b3ba53afa9094760.bindTooltip(
+                `<div>
+                     Project EATS Essex Market Line Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f4dd4a62cb37e1b4407f0338b57a420c = L.marker(
+                [40.67514, -73.91535],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_1dd26dd6fd7efac705f442648032eff0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd8bf170ef7ec1feca215ae9a4e8834c = $(`<div id="html_bd8bf170ef7ec1feca215ae9a4e8834c" style="width: 100.0%; height: 100.0%;">     <b>PS 178 Farm Stand</b><br>     2163 Dean Street<br>     Brooklyn     </div>`)[0];
+                popup_1dd26dd6fd7efac705f442648032eff0.setContent(html_bd8bf170ef7ec1feca215ae9a4e8834c);
+            
+        
+
+        marker_f4dd4a62cb37e1b4407f0338b57a420c.bindPopup(popup_1dd26dd6fd7efac705f442648032eff0)
+        ;
+
+        
+    
+    
+            marker_f4dd4a62cb37e1b4407f0338b57a420c.bindTooltip(
+                `<div>
+                     PS 178 Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_698c3a81bd2f99104b450ecb92274ebb = L.marker(
+                [40.67237, -74.00884],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_d7c27248080da336895900b38b952596 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab6eb0cbd06fa95816fc73d83014ce67 = $(`<div id="html_ab6eb0cbd06fa95816fc73d83014ce67" style="width: 100.0%; height: 100.0%;">     <b>Red Hook Farm Stand</b><br>     560 Columbia St<br>     Brooklyn              <br><a href="http://www.added-value.org/farmers-market" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_d7c27248080da336895900b38b952596.setContent(html_ab6eb0cbd06fa95816fc73d83014ce67);
+            
+        
+
+        marker_698c3a81bd2f99104b450ecb92274ebb.bindPopup(popup_d7c27248080da336895900b38b952596)
+        ;
+
+        
+    
+    
+            marker_698c3a81bd2f99104b450ecb92274ebb.bindTooltip(
+                `<div>
+                     Red Hook Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1733802f0d377e0d32534b43ab6cf810 = L.marker(
+                [40.70117, -73.92252],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_8be6a6b2576f4d6bf2901b556efb3575 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bee0b5f408c4f5b7b2c93bf04c946bee = $(`<div id="html_bee0b5f408c4f5b7b2c93bf04c946bee" style="width: 100.0%; height: 100.0%;">     <b>Riseboro Hope Ball Field Farmers' Market</b><br>     Knickerbocker Ave<br>     Bushwick              <br><a href="http://www.riseboro.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_8be6a6b2576f4d6bf2901b556efb3575.setContent(html_bee0b5f408c4f5b7b2c93bf04c946bee);
+            
+        
+
+        marker_1733802f0d377e0d32534b43ab6cf810.bindPopup(popup_8be6a6b2576f4d6bf2901b556efb3575)
+        ;
+
+        
+    
+    
+            marker_1733802f0d377e0d32534b43ab6cf810.bindTooltip(
+                `<div>
+                     Riseboro Hope Ball Field Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f623820a69ccb23d99d955db10e6a29d = L.marker(
+                [40.69325, -73.90859],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_3a6dd5b4c91dfc12deacb41f503fad24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4afed22c734f1b828bf919fa5420e7a0 = $(`<div id="html_4afed22c734f1b828bf919fa5420e7a0" style="width: 100.0%; height: 100.0%;">     <b>Riseboro Irving Square Farmers' Market</b><br>     Knickerbocker Ave between Wierfield and Halsey Streets<br>     Brooklyn     </div>`)[0];
+                popup_3a6dd5b4c91dfc12deacb41f503fad24.setContent(html_4afed22c734f1b828bf919fa5420e7a0);
+            
+        
+
+        marker_f623820a69ccb23d99d955db10e6a29d.bindPopup(popup_3a6dd5b4c91dfc12deacb41f503fad24)
+        ;
+
+        
+    
+    
+            marker_f623820a69ccb23d99d955db10e6a29d.bindTooltip(
+                `<div>
+                     Riseboro Irving Square Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6a5a6abde40e73b7d8eb4ff0c4ad515c = L.marker(
+                [40.70257, -73.92497],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_ef08e92b5b1980b2afb637f636d972c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cbc8fa8e0e273d9455c8f9fe6fd1f816 = $(`<div id="html_cbc8fa8e0e273d9455c8f9fe6fd1f816" style="width: 100.0%; height: 100.0%;">     <b>Riseboro Maria Hernandez Pk Farmers' Market</b><br>     Knickerbocker Avenue<br>     Brooklyn              <br><a href="http://www.riseboro.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_ef08e92b5b1980b2afb637f636d972c2.setContent(html_cbc8fa8e0e273d9455c8f9fe6fd1f816);
+            
+        
+
+        marker_6a5a6abde40e73b7d8eb4ff0c4ad515c.bindPopup(popup_ef08e92b5b1980b2afb637f636d972c2)
+        ;
+
+        
+    
+    
+            marker_6a5a6abde40e73b7d8eb4ff0c4ad515c.bindTooltip(
+                `<div>
+                     Riseboro Maria Hernandez Pk Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dd670464dfe90947d740bedf2f732c43 = L.marker(
+                [40.67849, -73.9162],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_b978765e0ba5b8fafa45938ed9e98cbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b99dbc9977527b2947be21be5b562646 = $(`<div id="html_b99dbc9977527b2947be21be5b562646" style="width: 100.0%; height: 100.0%;">     <b>Saratoga Farm Stand</b><br>     1965 Fulton Street<br>     Brooklyn     </div>`)[0];
+                popup_b978765e0ba5b8fafa45938ed9e98cbc.setContent(html_b99dbc9977527b2947be21be5b562646);
+            
+        
+
+        marker_dd670464dfe90947d740bedf2f732c43.bindPopup(popup_b978765e0ba5b8fafa45938ed9e98cbc)
+        ;
+
+        
+    
+    
+            marker_dd670464dfe90947d740bedf2f732c43.bindTooltip(
+                `<div>
+                     Saratoga Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bcfb5e27ff37f29de525d6d5d8ca00fe = L.marker(
+                [40.64108, -73.96558],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_9bc62f39d0bd65e5a2a9d932a555039f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c367645d47547db135719faa15be6ef = $(`<div id="html_3c367645d47547db135719faa15be6ef" style="width: 100.0%; height: 100.0%;">     <b>Seeds in the Middle Farm Stand-Bed Stuy PS 262</b><br>     330 Rugby Road<br>     Brooklyn              <br><a href="http://seedsinthemiddle.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_9bc62f39d0bd65e5a2a9d932a555039f.setContent(html_3c367645d47547db135719faa15be6ef);
+            
+        
+
+        marker_bcfb5e27ff37f29de525d6d5d8ca00fe.bindPopup(popup_9bc62f39d0bd65e5a2a9d932a555039f)
+        ;
+
+        
+    
+    
+            marker_bcfb5e27ff37f29de525d6d5d8ca00fe.bindTooltip(
+                `<div>
+                     Seeds in the Middle Farm Stand-Bed Stuy PS 262
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_46d997aef73912a79fbb1ecf0ebbe260 = L.marker(
+                [40.65959, -73.90698],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_aa3b83ddaba8a5450a0c4ccd49d9ac33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10b525ca4c67d348d3ff437415e64eb0 = $(`<div id="html_10b525ca4c67d348d3ff437415e64eb0" style="width: 100.0%; height: 100.0%;">     <b>Seeds in the Middle Farm Stand-Brownsville PS 184</b><br>     273 Newport Rd<br>     Brooklyn              <br><a href="http://seedsinthemiddle.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_aa3b83ddaba8a5450a0c4ccd49d9ac33.setContent(html_10b525ca4c67d348d3ff437415e64eb0);
+            
+        
+
+        marker_46d997aef73912a79fbb1ecf0ebbe260.bindPopup(popup_aa3b83ddaba8a5450a0c4ccd49d9ac33)
+        ;
+
+        
+    
+    
+            marker_46d997aef73912a79fbb1ecf0ebbe260.bindTooltip(
+                `<div>
+                     Seeds in the Middle Farm Stand-Brownsville PS 184
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c9e0ca84da4f7df245f583779e5b1289 = L.marker(
+                [40.57663, -73.98606],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_6214ed01d0f0d66545538bd3f408b1d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_92165f7dca41162d382252767f105ed1 = $(`<div id="html_92165f7dca41162d382252767f105ed1" style="width: 100.0%; height: 100.0%;">     <b>Seeds in the Middle Farm Stand-Coney Island</b><br>     1901 Mermaid Avenue<br>     Brooklyn     </div>`)[0];
+                popup_6214ed01d0f0d66545538bd3f408b1d9.setContent(html_92165f7dca41162d382252767f105ed1);
+            
+        
+
+        marker_c9e0ca84da4f7df245f583779e5b1289.bindPopup(popup_6214ed01d0f0d66545538bd3f408b1d9)
+        ;
+
+        
+    
+    
+            marker_c9e0ca84da4f7df245f583779e5b1289.bindTooltip(
+                `<div>
+                     Seeds in the Middle Farm Stand-Coney Island
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2ded6f8a8e60f1d8ebaa0adceb0db615 = L.marker(
+                [40.6451, -73.94896],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_bd7f7c54b3a951304f09686fdaaf0a56 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f1033e09228b826b2770b1ed8f74ecd9 = $(`<div id="html_f1033e09228b826b2770b1ed8f74ecd9" style="width: 100.0%; height: 100.0%;">     <b>Seeds in the Middle Farm Stand-E Flatbush IS 285</b><br>     3909 Beverly Road<br>     Brooklyn              <br><a href="http://seedsinthemiddle.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_bd7f7c54b3a951304f09686fdaaf0a56.setContent(html_f1033e09228b826b2770b1ed8f74ecd9);
+            
+        
+
+        marker_2ded6f8a8e60f1d8ebaa0adceb0db615.bindPopup(popup_bd7f7c54b3a951304f09686fdaaf0a56)
+        ;
+
+        
+    
+    
+            marker_2ded6f8a8e60f1d8ebaa0adceb0db615.bindTooltip(
+                `<div>
+                     Seeds in the Middle Farm Stand-E Flatbush IS 285
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bf9263ecddb2c652205abd4f59fcf43a = L.marker(
+                [40.6367, -73.95151],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_40dddc4272b300ea94bac1ab38a5e900 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_970aea6cbc1561e341b822b4ab6e702e = $(`<div id="html_970aea6cbc1561e341b822b4ab6e702e" style="width: 100.0%; height: 100.0%;">     <b>Seeds in the Middle Farm Stand-Flatbush PS 235</b><br>     1401 Flatbush Ave<br>     Brooklyn              <br><a href="http://seedsinthemiddle.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_40dddc4272b300ea94bac1ab38a5e900.setContent(html_970aea6cbc1561e341b822b4ab6e702e);
+            
+        
+
+        marker_bf9263ecddb2c652205abd4f59fcf43a.bindPopup(popup_40dddc4272b300ea94bac1ab38a5e900)
+        ;
+
+        
+    
+    
+            marker_bf9263ecddb2c652205abd4f59fcf43a.bindTooltip(
+                `<div>
+                     Seeds in the Middle Farm Stand-Flatbush PS 235
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6414b2c91251f299398eb7fcd4401640 = L.marker(
+                [40.66569, -73.95382],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_e30b345203e4a88755565f4613c49470 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a7c3ee9b0fd7160cc08626431c9d8d2 = $(`<div id="html_6a7c3ee9b0fd7160cc08626431c9d8d2" style="width: 100.0%; height: 100.0%;">     <b>Seeds in the Middle-Crown Heights Farm Stand</b><br>     318 Rodgers Avenue<br>     Brooklyn              <br><a href="http://seedsinthemiddle.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_e30b345203e4a88755565f4613c49470.setContent(html_6a7c3ee9b0fd7160cc08626431c9d8d2);
+            
+        
+
+        marker_6414b2c91251f299398eb7fcd4401640.bindPopup(popup_e30b345203e4a88755565f4613c49470)
+        ;
+
+        
+    
+    
+            marker_6414b2c91251f299398eb7fcd4401640.bindTooltip(
+                `<div>
+                     Seeds in the Middle-Crown Heights Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_187583e0ddbe0187aafcc69ba4deaa15 = L.marker(
+                [40.65621, -73.93741],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_a507b20eb6a7c9074c20421c13dbbd51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdd667b2046c016ad87684b56d0657dc = $(`<div id="html_bdd667b2046c016ad87684b56d0657dc" style="width: 100.0%; height: 100.0%;">     <b>Urban Oasis Farm Stand</b><br>     681 Clarkson Ave<br>     Brooklyn     </div>`)[0];
+                popup_a507b20eb6a7c9074c20421c13dbbd51.setContent(html_bdd667b2046c016ad87684b56d0657dc);
+            
+        
+
+        marker_187583e0ddbe0187aafcc69ba4deaa15.bindPopup(popup_a507b20eb6a7c9074c20421c13dbbd51)
+        ;
+
+        
+    
+    
+            marker_187583e0ddbe0187aafcc69ba4deaa15.bindTooltip(
+                `<div>
+                     Urban Oasis Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ee80098701748f3f44bc5ff5608852cc = L.marker(
+                [40.70029, -73.94111],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_db92bec9e0e11f9c586eaa34b45186e2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3bcc1e7852ad5537a26f70c74e48d7ec = $(`<div id="html_3bcc1e7852ad5537a26f70c74e48d7ec" style="width: 100.0%; height: 100.0%;">     <b>Woodhull Hospital GrowNYC Farm Stand</b><br>     Marcus Garvey Boulevard and Broadway<br>     Brooklyn              <br><a href="https://www.grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_db92bec9e0e11f9c586eaa34b45186e2.setContent(html_3bcc1e7852ad5537a26f70c74e48d7ec);
+            
+        
+
+        marker_ee80098701748f3f44bc5ff5608852cc.bindPopup(popup_db92bec9e0e11f9c586eaa34b45186e2)
+        ;
+
+        
+    
+    
+            marker_ee80098701748f3f44bc5ff5608852cc.bindTooltip(
+                `<div>
+                     Woodhull Hospital GrowNYC Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4bb45a50754f446cc8038037e039c1c6 = L.marker(
+                [40.64439, -73.92083],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_ae3e22f8045de94446c7d1c107c6a465 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_791a07408ff99bad59edffc313e50055 = $(`<div id="html_791a07408ff99bad59edffc313e50055" style="width: 100.0%; height: 100.0%;">     <b>Wyckoff House Museum Farm Stand</b><br>     5816 Clarendon Road<br>     Brooklyn     </div>`)[0];
+                popup_ae3e22f8045de94446c7d1c107c6a465.setContent(html_791a07408ff99bad59edffc313e50055);
+            
+        
+
+        marker_4bb45a50754f446cc8038037e039c1c6.bindPopup(popup_ae3e22f8045de94446c7d1c107c6a465)
+        ;
+
+        
+    
+    
+            marker_4bb45a50754f446cc8038037e039c1c6.bindTooltip(
+                `<div>
+                     Wyckoff House Museum Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_74bc6c7e8768f87e0bdd8b184777c27e = L.marker(
+                [40.70922, -73.7216],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_f7eba124eb75abfdbc5d6e481c305dad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef50370fd9145c2e865fc49a3426b6fc = $(`<div id="html_ef50370fd9145c2e865fc49a3426b6fc" style="width: 100.0%; height: 100.0%;">     <b>Belmont Park Farm Stand at Anna House</b><br>     2150 Hempstead Turnpike<br>     Elmont              <br><a href="http://www.rtcany.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_f7eba124eb75abfdbc5d6e481c305dad.setContent(html_ef50370fd9145c2e865fc49a3426b6fc);
+            
+        
+
+        marker_74bc6c7e8768f87e0bdd8b184777c27e.bindPopup(popup_f7eba124eb75abfdbc5d6e481c305dad)
+        ;
+
+        
+    
+    
+            marker_74bc6c7e8768f87e0bdd8b184777c27e.bindTooltip(
+                `<div>
+                     Belmont Park Farm Stand at Anna House
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dbc5e437db6922a2647ba8778b75f7fc = L.marker(
+                [40.73687, -73.58301],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_9f1a268ca1fe377bd90f0d048d66f9f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b0168b61006d1c3ce937bf7315ed2bad = $(`<div id="html_b0168b61006d1c3ce937bf7315ed2bad" style="width: 100.0%; height: 100.0%;">     <b>CCE Nassau Eisenhower Pk Farmers' Market</b><br>     Stewart @ Merrick Ave.<br>     East Meadow              <br><a href="http://ccenassau.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_9f1a268ca1fe377bd90f0d048d66f9f9.setContent(html_b0168b61006d1c3ce937bf7315ed2bad);
+            
+        
+
+        marker_dbc5e437db6922a2647ba8778b75f7fc.bindPopup(popup_9f1a268ca1fe377bd90f0d048d66f9f9)
+        ;
+
+        
+    
+    
+            marker_dbc5e437db6922a2647ba8778b75f7fc.bindTooltip(
+                `<div>
+                     CCE Nassau Eisenhower Pk Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fbd78f7f2796427ae2554e407f5ae835 = L.marker(
+                [40.76173, -73.56733],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_99ea41c4dabd430d8065d0a92d2b49a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ae472e8dab32c8ebb22ab37fddd03e90 = $(`<div id="html_ae472e8dab32c8ebb22ab37fddd03e90" style="width: 100.0%; height: 100.0%;">     <b>Community Connections Farm Stand-Garden St.</b><br>     212 Garden St<br>     Westbury     </div>`)[0];
+                popup_99ea41c4dabd430d8065d0a92d2b49a7.setContent(html_ae472e8dab32c8ebb22ab37fddd03e90);
+            
+        
+
+        marker_fbd78f7f2796427ae2554e407f5ae835.bindPopup(popup_99ea41c4dabd430d8065d0a92d2b49a7)
+        ;
+
+        
+    
+    
+            marker_fbd78f7f2796427ae2554e407f5ae835.bindTooltip(
+                `<div>
+                     Community Connections Farm Stand-Garden St.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5cfd8f380f95d7b16b9808719b17624a = L.marker(
+                [40.7559, -73.58741],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_efbbd2229d90389800ee036ebf8892e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_536849f74b9f2c5b9600e4a7a0d825a8 = $(`<div id="html_536849f74b9f2c5b9600e4a7a0d825a8" style="width: 100.0%; height: 100.0%;">     <b>Community Connections Farm Stand-Maple Ave.</b><br>     301-311 Maple Avenue<br>     Westbury     </div>`)[0];
+                popup_efbbd2229d90389800ee036ebf8892e7.setContent(html_536849f74b9f2c5b9600e4a7a0d825a8);
+            
+        
+
+        marker_5cfd8f380f95d7b16b9808719b17624a.bindPopup(popup_efbbd2229d90389800ee036ebf8892e7)
+        ;
+
+        
+    
+    
+            marker_5cfd8f380f95d7b16b9808719b17624a.bindTooltip(
+                `<div>
+                     Community Connections Farm Stand-Maple Ave.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c7355227f94665dead17d31529c9fb84 = L.marker(
+                [40.73166, -73.44566],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_b6dcf37c0fd2bd20b3928727dddcdd80 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d5e9821934aec738d26676f0b1a9dc30 = $(`<div id="html_d5e9821934aec738d26676f0b1a9dc30" style="width: 100.0%; height: 100.0%;">     <b>Country Fresh Farmingdale Farmers' Market</b><br>     361 Main St<br>     Farmingdale     </div>`)[0];
+                popup_b6dcf37c0fd2bd20b3928727dddcdd80.setContent(html_d5e9821934aec738d26676f0b1a9dc30);
+            
+        
+
+        marker_c7355227f94665dead17d31529c9fb84.bindPopup(popup_b6dcf37c0fd2bd20b3928727dddcdd80)
+        ;
+
+        
+    
+    
+            marker_c7355227f94665dead17d31529c9fb84.bindTooltip(
+                `<div>
+                     Country Fresh Farmingdale Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ab13745eac4788d41b6faf119488dee4 = L.marker(
+                [40.68066, -73.66376],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_4143783a4dafa7ab37fce19afb8c7b51 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea9dd969be6045227d8c94415142867c = $(`<div id="html_ea9dd969be6045227d8c94415142867c" style="width: 100.0%; height: 100.0%;">     <b>Crossroads Farm Farm Stand</b><br>     480 Hempstead Ave<br>     Malverne              <br><a href="http://www.xroadsfarmliny.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_4143783a4dafa7ab37fce19afb8c7b51.setContent(html_ea9dd969be6045227d8c94415142867c);
+            
+        
+
+        marker_ab13745eac4788d41b6faf119488dee4.bindPopup(popup_4143783a4dafa7ab37fce19afb8c7b51)
+        ;
+
+        
+    
+    
+            marker_ab13745eac4788d41b6faf119488dee4.bindTooltip(
+                `<div>
+                     Crossroads Farm Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5e315e19a226541abb691489f5de6041 = L.marker(
+                [40.85889, -73.64328],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_3d9d4d99270b791af10d3ec8de2a4391 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_205471eb7a271881d84996a86a3c11d5 = $(`<div id="html_205471eb7a271881d84996a86a3c11d5" style="width: 100.0%; height: 100.0%;">     <b>Deep Roots Farmers' Market</b><br>     100 Garvies Point Rd<br>     Glen Cove     </div>`)[0];
+                popup_3d9d4d99270b791af10d3ec8de2a4391.setContent(html_205471eb7a271881d84996a86a3c11d5);
+            
+        
+
+        marker_5e315e19a226541abb691489f5de6041.bindPopup(popup_3d9d4d99270b791af10d3ec8de2a4391)
+        ;
+
+        
+    
+    
+            marker_5e315e19a226541abb691489f5de6041.bindTooltip(
+                `<div>
+                     Deep Roots Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6941ed13059d2d8a87e1ed0942c101a1 = L.marker(
+                [40.70092, -73.56747],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_d9a4ec54bdf0c9a1c089679dfdd857cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8df23d3c694430e06a1f3d134e98ca82 = $(`<div id="html_8df23d3c694430e06a1f3d134e98ca82" style="width: 100.0%; height: 100.0%;">     <b>East Meadow Farm Stand</b><br>     832 Merrick Avenue<br>     East Meadow              <br><a href="http://cce.nassau.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_d9a4ec54bdf0c9a1c089679dfdd857cf.setContent(html_8df23d3c694430e06a1f3d134e98ca82);
+            
+        
+
+        marker_6941ed13059d2d8a87e1ed0942c101a1.bindPopup(popup_d9a4ec54bdf0c9a1c089679dfdd857cf)
+        ;
+
+        
+    
+    
+            marker_6941ed13059d2d8a87e1ed0942c101a1.bindTooltip(
+                `<div>
+                     East Meadow Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bb99132f8b95189544f543f5989fd394 = L.marker(
+                [40.58943, -73.66592],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_022861db8e297b955f9afbe556a1f6c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b49fad2f792dba6130fa8771a200f796 = $(`<div id="html_b49fad2f792dba6130fa8771a200f796" style="width: 100.0%; height: 100.0%;">     <b>Kennedy Plaza Long Beach Farmers' Market -Wed</b><br>     1 West Chester St<br>     Long Beach              <br><a href="http://www.ligreenmarket.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_022861db8e297b955f9afbe556a1f6c0.setContent(html_b49fad2f792dba6130fa8771a200f796);
+            
+        
+
+        marker_bb99132f8b95189544f543f5989fd394.bindPopup(popup_022861db8e297b955f9afbe556a1f6c0)
+        ;
+
+        
+    
+    
+            marker_bb99132f8b95189544f543f5989fd394.bindTooltip(
+                `<div>
+                     Kennedy Plaza Long Beach Farmers' Market -Wed
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_df3092e1aaa36e18afdf38f75891fc8a = L.marker(
+                [40.58943, -73.66592],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_7bb24f5bfb51afbe44b0b11ad880cda5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4371ed2001d16ce4018c6dd6e69844b = $(`<div id="html_f4371ed2001d16ce4018c6dd6e69844b" style="width: 100.0%; height: 100.0%;">     <b>Kennedy Plaza Long Beach Farmers' Market-Sat</b><br>     1 West Chester St<br>     Long Beach              <br><a href="http://www.ligreenmarket.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_7bb24f5bfb51afbe44b0b11ad880cda5.setContent(html_f4371ed2001d16ce4018c6dd6e69844b);
+            
+        
+
+        marker_df3092e1aaa36e18afdf38f75891fc8a.bindPopup(popup_7bb24f5bfb51afbe44b0b11ad880cda5)
+        ;
+
+        
+    
+    
+            marker_df3092e1aaa36e18afdf38f75891fc8a.bindTooltip(
+                `<div>
+                     Kennedy Plaza Long Beach Farmers' Market-Sat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3fe5db009503373167bf96e09d1984bb = L.marker(
+                [40.83153, -73.7019],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_f74e3ba2e3bdb861536932d8e3adef37 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3bf96b8eadf76caf96ac1f6552dcc36c = $(`<div id="html_3bf96b8eadf76caf96ac1f6552dcc36c" style="width: 100.0%; height: 100.0%;">     <b>Port Washington Organic Farmers' Market</b><br>     347 Main St.<br>     Port Washington              <br><a href="https://www.pwfarmersmarket.org/" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_f74e3ba2e3bdb861536932d8e3adef37.setContent(html_3bf96b8eadf76caf96ac1f6552dcc36c);
+            
+        
+
+        marker_3fe5db009503373167bf96e09d1984bb.bindPopup(popup_f74e3ba2e3bdb861536932d8e3adef37)
+        ;
+
+        
+    
+    
+            marker_3fe5db009503373167bf96e09d1984bb.bindTooltip(
+                `<div>
+                     Port Washington Organic Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e9d60fea440e59482a37682d9ae2addd = L.marker(
+                [40.65712, -73.6321],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_fda9d6e2650f679ce61575970e9cc292 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7104aac4ccc6409830fccecb6d5fc87e = $(`<div id="html_7104aac4ccc6409830fccecb6d5fc87e" style="width: 100.0%; height: 100.0%;">     <b>Rockville Centre Farmers' Market</b><br>     Sunrise Hwy and Long Beach Rd<br>     Rockville Centre              <br><a href="http://www.longislandgrowersmarket.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_fda9d6e2650f679ce61575970e9cc292.setContent(html_7104aac4ccc6409830fccecb6d5fc87e);
+            
+        
+
+        marker_e9d60fea440e59482a37682d9ae2addd.bindPopup(popup_fda9d6e2650f679ce61575970e9cc292)
+        ;
+
+        
+    
+    
+            marker_e9d60fea440e59482a37682d9ae2addd.bindTooltip(
+                `<div>
+                     Rockville Centre Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4515555cbf94e031e464c18ca3a0fb1c = L.marker(
+                [40.78188, -73.66277],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_8492c6a4816d7124e56bb883f5cf7b9f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44b9138b91f6c7dd33f834a27c8912f8 = $(`<div id="html_44b9138b91f6c7dd33f834a27c8912f8" style="width: 100.0%; height: 100.0%;">     <b>Roslyn Farmers' Market</b><br>     500 Searingtown Rd<br>     Roslyn              <br><a href="http://www.longislandgrowersmarket.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_8492c6a4816d7124e56bb883f5cf7b9f.setContent(html_44b9138b91f6c7dd33f834a27c8912f8);
+            
+        
+
+        marker_4515555cbf94e031e464c18ca3a0fb1c.bindPopup(popup_8492c6a4816d7124e56bb883f5cf7b9f)
+        ;
+
+        
+    
+    
+            marker_4515555cbf94e031e464c18ca3a0fb1c.bindTooltip(
+                `<div>
+                     Roslyn Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_39ba77bc8ddf8006d28a59974593e23b = L.marker(
+                [40.83108, -73.61864],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_0521f31f53bd800897726fb7007ad3cf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb97dedf5d2c7663d1c5b5c4b3051ef9 = $(`<div id="html_fb97dedf5d2c7663d1c5b5c4b3051ef9" style="width: 100.0%; height: 100.0%;">     <b>Rottkamp Bros Farm Stand</b><br>     McCouns Lane<br>     Old Brookville     </div>`)[0];
+                popup_0521f31f53bd800897726fb7007ad3cf.setContent(html_fb97dedf5d2c7663d1c5b5c4b3051ef9);
+            
+        
+
+        marker_39ba77bc8ddf8006d28a59974593e23b.bindPopup(popup_0521f31f53bd800897726fb7007ad3cf)
+        ;
+
+        
+    
+    
+            marker_39ba77bc8ddf8006d28a59974593e23b.bindTooltip(
+                `<div>
+                     Rottkamp Bros Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_434c348c73c5aa121c270b18849ba809 = L.marker(
+                [40.67572, -73.48657],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_38ca1066ce82d3b2451cc17ebcea7703 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a24494eb37bd608870c1e6a9698a4e10 = $(`<div id="html_a24494eb37bd608870c1e6a9698a4e10" style="width: 100.0%; height: 100.0%;">     <b>Seaford Farmers' Market</b><br>     Sunrise Highway and Washington St.<br>     Seaford              <br><a href="http://www.longislandgrowersmarket.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_38ca1066ce82d3b2451cc17ebcea7703.setContent(html_a24494eb37bd608870c1e6a9698a4e10);
+            
+        
+
+        marker_434c348c73c5aa121c270b18849ba809.bindPopup(popup_38ca1066ce82d3b2451cc17ebcea7703)
+        ;
+
+        
+    
+    
+            marker_434c348c73c5aa121c270b18849ba809.bindTooltip(
+                `<div>
+                     Seaford Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8ca6cdc053f28ba9fc3b931b730f73cf = L.marker(
+                [40.68156, -73.53528],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_126cdc4842877bd41f003ec64e2fad01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a213409f4c28e21d8ad5a09eaa44344d = $(`<div id="html_a213409f4c28e21d8ad5a09eaa44344d" style="width: 100.0%; height: 100.0%;">     <b>The Garden at St. Francis Farm Stand</b><br>     1692 Bellmore Ave<br>     North Bellmore     </div>`)[0];
+                popup_126cdc4842877bd41f003ec64e2fad01.setContent(html_a213409f4c28e21d8ad5a09eaa44344d);
+            
+        
+
+        marker_8ca6cdc053f28ba9fc3b931b730f73cf.bindPopup(popup_126cdc4842877bd41f003ec64e2fad01)
+        ;
+
+        
+    
+    
+            marker_8ca6cdc053f28ba9fc3b931b730f73cf.bindTooltip(
+                `<div>
+                     The Garden at St. Francis Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4087563657f2300aa66d909d7a092d8b = L.marker(
+                [40.72556, -73.50916],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_cf687057df6e725e4c4897aaa55197c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d791a4910f954ed1e80e47f51ca4664 = $(`<div id="html_0d791a4910f954ed1e80e47f51ca4664" style="width: 100.0%; height: 100.0%;">     <b>The Napolitano Family Farm Stand</b><br>     3434 Hempstead Turnpike<br>     Levittown              <br><a href="http://www.napolitanofamilyfarm.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_cf687057df6e725e4c4897aaa55197c6.setContent(html_0d791a4910f954ed1e80e47f51ca4664);
+            
+        
+
+        marker_4087563657f2300aa66d909d7a092d8b.bindPopup(popup_cf687057df6e725e4c4897aaa55197c6)
+        ;
+
+        
+    
+    
+            marker_4087563657f2300aa66d909d7a092d8b.bindTooltip(
+                `<div>
+                     The Napolitano Family Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b8c776bd1af5d52eac59c99d2c32de1a = L.marker(
+                [40.84622, -73.93847],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_2b5a471ee212a9e173a76eb0f51ee6b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_151e7ebd0733044c9672942354de44d7 = $(`<div id="html_151e7ebd0733044c9672942354de44d7" style="width: 100.0%; height: 100.0%;">     <b>175th Street Greenmarket</b><br>     651 West 175th St and Broadway<br>     New York              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_2b5a471ee212a9e173a76eb0f51ee6b0.setContent(html_151e7ebd0733044c9672942354de44d7);
+            
+        
+
+        marker_b8c776bd1af5d52eac59c99d2c32de1a.bindPopup(popup_2b5a471ee212a9e173a76eb0f51ee6b0)
+        ;
+
+        
+    
+    
+            marker_b8c776bd1af5d52eac59c99d2c32de1a.bindTooltip(
+                `<div>
+                     175th Street Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_de6b030ee5b3853eb134b5caef32118d = L.marker(
+                [40.76914, -73.9882],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_6483dad98c45551163d1fb1a12df3f69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7dab3feb0664af508068fbe972e4dea = $(`<div id="html_a7dab3feb0664af508068fbe972e4dea" style="width: 100.0%; height: 100.0%;">     <b>57th Street Saturday Greenmarket</b><br>     475 West 57th Street<br>     New York              <br><a href="https://www.grownyc.org/57greenmarket-sat" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_6483dad98c45551163d1fb1a12df3f69.setContent(html_a7dab3feb0664af508068fbe972e4dea);
+            
+        
+
+        marker_de6b030ee5b3853eb134b5caef32118d.bindPopup(popup_6483dad98c45551163d1fb1a12df3f69)
+        ;
+
+        
+    
+    
+            marker_de6b030ee5b3853eb134b5caef32118d.bindTooltip(
+                `<div>
+                     57th Street Saturday Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f1637bf0fa8fa6ac30003733c631c4e6 = L.marker(
+                [40.7809, -73.97648],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_a6362430d852b908dc22293d3aac3150 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16f11b1c6ad59c781c14f8f739aa7074 = $(`<div id="html_16f11b1c6ad59c781c14f8f739aa7074" style="width: 100.0%; height: 100.0%;">     <b>79th Street Greenmarket</b><br>     366 Columbus Ave<br>     New York              <br><a href="http://www.grownyc.org/greenmarket/manhattan/79th-street" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_a6362430d852b908dc22293d3aac3150.setContent(html_16f11b1c6ad59c781c14f8f739aa7074);
+            
+        
+
+        marker_f1637bf0fa8fa6ac30003733c631c4e6.bindPopup(popup_a6362430d852b908dc22293d3aac3150)
+        ;
+
+        
+    
+    
+            marker_f1637bf0fa8fa6ac30003733c631c4e6.bindTooltip(
+                `<div>
+                     79th Street Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_037a7eb43418ca6c8029d69643aede43 = L.marker(
+                [40.77394, -73.9506],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_1c105265cbaf0bebb6b5cb8e4ae68e2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e2102e109a7514209de0d1ea46b9209 = $(`<div id="html_3e2102e109a7514209de0d1ea46b9209" style="width: 100.0%; height: 100.0%;">     <b>82nd Street Greenmarket</b><br>     408 East 82nd Street<br>     New York              <br><a href="http://www.grownyc.org/greenmarket/manhattan/82nd-street" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_1c105265cbaf0bebb6b5cb8e4ae68e2e.setContent(html_3e2102e109a7514209de0d1ea46b9209);
+            
+        
+
+        marker_037a7eb43418ca6c8029d69643aede43.bindPopup(popup_1c105265cbaf0bebb6b5cb8e4ae68e2e)
+        ;
+
+        
+    
+    
+            marker_037a7eb43418ca6c8029d69643aede43.bindTooltip(
+                `<div>
+                     82nd Street Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0288e1a973824edf1d533119b4e1a08c = L.marker(
+                [40.79356, -73.96701],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_d8bf7f53f3d54a09cc6498f2e2619b46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f8de22a6e8249249283cb8265383b7ae = $(`<div id="html_f8de22a6e8249249283cb8265383b7ae" style="width: 100.0%; height: 100.0%;">     <b>97th Street Greenmarket</b><br>     West 97th St and Columbus Ave<br>     New York              <br><a href="http://www.grownyc.org/greenmarket/manhattan/west-97" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_d8bf7f53f3d54a09cc6498f2e2619b46.setContent(html_f8de22a6e8249249283cb8265383b7ae);
+            
+        
+
+        marker_0288e1a973824edf1d533119b4e1a08c.bindPopup(popup_d8bf7f53f3d54a09cc6498f2e2619b46)
+        ;
+
+        
+    
+    
+            marker_0288e1a973824edf1d533119b4e1a08c.bindTooltip(
+                `<div>
+                     97th Street Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b2a910b4d7f51652dd5bf837eceeb3bf = L.marker(
+                [40.73719, -74.00592],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_fd5f8bb17dec20c4294bced435c9cd8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_14121a0625b7e0cbc11344d51231c737 = $(`<div id="html_14121a0625b7e0cbc11344d51231c737" style="width: 100.0%; height: 100.0%;">     <b>Abingdon Square Greenmarket</b><br>     601 Hudson St<br>     New York              <br><a href="http://www.grownyc.org/greenmarket/manhattan/abingdon-square" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_fd5f8bb17dec20c4294bced435c9cd8f.setContent(html_14121a0625b7e0cbc11344d51231c737);
+            
+        
+
+        marker_b2a910b4d7f51652dd5bf837eceeb3bf.bindPopup(popup_fd5f8bb17dec20c4294bced435c9cd8f)
+        ;
+
+        
+    
+    
+            marker_b2a910b4d7f51652dd5bf837eceeb3bf.bindTooltip(
+                `<div>
+                     Abingdon Square Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_446b34677c991d3495d2b561b0c0dbab = L.marker(
+                [40.70454, -74.01418],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_cd7dde4861d71598de81307774c6fc32 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f7c17719d25cc66cab4435467cdbfdf = $(`<div id="html_7f7c17719d25cc66cab4435467cdbfdf" style="width: 100.0%; height: 100.0%;">     <b>Bowling Green Tuesday Greenmarket</b><br>     1 Bowling Green<br>     New York              <br><a href="http://www.grownyc.org/greenmarket/manhattan/bowling-green-tu" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_cd7dde4861d71598de81307774c6fc32.setContent(html_7f7c17719d25cc66cab4435467cdbfdf);
+            
+        
+
+        marker_446b34677c991d3495d2b561b0c0dbab.bindPopup(popup_cd7dde4861d71598de81307774c6fc32)
+        ;
+
+        
+    
+    
+            marker_446b34677c991d3495d2b561b0c0dbab.bindTooltip(
+                `<div>
+                     Bowling Green Tuesday Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6234f8e84a33f524d6acd0a5b2a09be0 = L.marker(
+                [40.82428, -73.94881],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_a8b144d2fcfcbe391fb69b21f61c1f7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_278acbdf3cfb1ca9868edd836e3ea686 = $(`<div id="html_278acbdf3cfb1ca9868edd836e3ea686" style="width: 100.0%; height: 100.0%;">     <b>Bro/Sis Green Youth Market</b><br>     140 Hamilton Place<br>     Manhattan              <br><a href="http://brotherhood-sistersol.org/programs/environmental-program" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_a8b144d2fcfcbe391fb69b21f61c1f7f.setContent(html_278acbdf3cfb1ca9868edd836e3ea686);
+            
+        
+
+        marker_6234f8e84a33f524d6acd0a5b2a09be0.bindPopup(popup_a8b144d2fcfcbe391fb69b21f61c1f7f)
+        ;
+
+        
+    
+    
+            marker_6234f8e84a33f524d6acd0a5b2a09be0.bindTooltip(
+                `<div>
+                     Bro/Sis Green Youth Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b2efdd9174b2465dcdd6da1c760cb7e2 = L.marker(
+                [40.74633, -74.00081],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_e90b736d105e81b947c8491c6480f471 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1519783a7af7fe3bc14eef317a14eb96 = $(`<div id="html_1519783a7af7fe3bc14eef317a14eb96" style="width: 100.0%; height: 100.0%;">     <b>Chelsea Farmers' Market</b><br>     351 W 23rd Street<br>     New York              <br><a href="http://www.downtoearthmarkets.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_e90b736d105e81b947c8491c6480f471.setContent(html_1519783a7af7fe3bc14eef317a14eb96);
+            
+        
+
+        marker_b2efdd9174b2465dcdd6da1c760cb7e2.bindPopup(popup_e90b736d105e81b947c8491c6480f471)
+        ;
+
+        
+    
+    
+            marker_b2efdd9174b2465dcdd6da1c760cb7e2.bindTooltip(
+                `<div>
+                     Chelsea Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_101d35103627d1481f5ab0e2064266ab = L.marker(
+                [40.8602, -73.92784],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_e2e1919c9a4b8a5b5335713891a81ffa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_104d5d7c4fb246fb031687dc72ce7831 = $(`<div id="html_104d5d7c4fb246fb031687dc72ce7831" style="width: 100.0%; height: 100.0%;">     <b>Children's Aid PS 152 Farm Stand</b><br>     93 Nagle Avenue<br>     New York     </div>`)[0];
+                popup_e2e1919c9a4b8a5b5335713891a81ffa.setContent(html_104d5d7c4fb246fb031687dc72ce7831);
+            
+        
+
+        marker_101d35103627d1481f5ab0e2064266ab.bindPopup(popup_e2e1919c9a4b8a5b5335713891a81ffa)
+        ;
+
+        
+    
+    
+            marker_101d35103627d1481f5ab0e2064266ab.bindTooltip(
+                `<div>
+                     Children's Aid PS 152 Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0cca3dd010f976cd7e77f73d6716ea1a = L.marker(
+                [40.80252, -73.94705],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_b9679b63b0be71c8dfda127b29f0bff4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dae088c370c6f219a1fb6ae8014896a8 = $(`<div id="html_dae088c370c6f219a1fb6ae8014896a8" style="width: 100.0%; height: 100.0%;">     <b>Children's Aid-Milbank Center</b><br>     14-32 West 118th Street<br>     New York              <br><a href="http://childrensaidnyc.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_b9679b63b0be71c8dfda127b29f0bff4.setContent(html_dae088c370c6f219a1fb6ae8014896a8);
+            
+        
+
+        marker_0cca3dd010f976cd7e77f73d6716ea1a.bindPopup(popup_b9679b63b0be71c8dfda127b29f0bff4)
+        ;
+
+        
+    
+    
+            marker_0cca3dd010f976cd7e77f73d6716ea1a.bindTooltip(
+                `<div>
+                     Children's Aid-Milbank Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0052c519c9d9ab5fc92c278226988560 = L.marker(
+                [40.71416, -74.00628],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_3504ec8bc3362c627223a001bdeaf13a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56387c55ee02b44970aa123cc28ea66c = $(`<div id="html_56387c55ee02b44970aa123cc28ea66c" style="width: 100.0%; height: 100.0%;">     <b>City Hall Park Tue Greenmarket</b><br>     Broadway and Chambers St<br>     New York              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_3504ec8bc3362c627223a001bdeaf13a.setContent(html_56387c55ee02b44970aa123cc28ea66c);
+            
+        
+
+        marker_0052c519c9d9ab5fc92c278226988560.bindPopup(popup_3504ec8bc3362c627223a001bdeaf13a)
+        ;
+
+        
+    
+    
+            marker_0052c519c9d9ab5fc92c278226988560.bindTooltip(
+                `<div>
+                     City Hall Park Tue Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6408a21a09a86d6d89a2820e63ec3328 = L.marker(
+                [40.80649, -73.96469],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_8ba662814c556d94788a3eccb652124b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d99d0954f3c61e82e226e4dbd9fe133f = $(`<div id="html_d99d0954f3c61e82e226e4dbd9fe133f" style="width: 100.0%; height: 100.0%;">     <b>Columbia Sun Greenmarket</b><br>     2910 Broadway<br>     New York              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_8ba662814c556d94788a3eccb652124b.setContent(html_d99d0954f3c61e82e226e4dbd9fe133f);
+            
+        
+
+        marker_6408a21a09a86d6d89a2820e63ec3328.bindPopup(popup_8ba662814c556d94788a3eccb652124b)
+        ;
+
+        
+    
+    
+            marker_6408a21a09a86d6d89a2820e63ec3328.bindTooltip(
+                `<div>
+                     Columbia Sun Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ef0d0f9890e71b0a66ab37156974dc7a = L.marker(
+                [40.80649, -73.96469],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_2d0a74ecfd51e3513276dfd8027f02a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e24b90118f147e7044aa2e96119aed6f = $(`<div id="html_e24b90118f147e7044aa2e96119aed6f" style="width: 100.0%; height: 100.0%;">     <b>Columbia Thu Greenmarket</b><br>     2910 Broadway<br>     New York              <br><a href="http://www.grownyc.org/greenmarket/manhattan/columbia-th" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_2d0a74ecfd51e3513276dfd8027f02a5.setContent(html_e24b90118f147e7044aa2e96119aed6f);
+            
+        
+
+        marker_ef0d0f9890e71b0a66ab37156974dc7a.bindPopup(popup_2d0a74ecfd51e3513276dfd8027f02a5)
+        ;
+
+        
+    
+    
+            marker_ef0d0f9890e71b0a66ab37156974dc7a.bindTooltip(
+                `<div>
+                     Columbia Thu Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5e20bc675b0e0ca625d301f9fdc873bf = L.marker(
+                [40.79827, -73.95251],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_76a1b57412411cea7c50840bcf292818 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4660b8fbd1b769e11be1e2e2ac7465c1 = $(`<div id="html_4660b8fbd1b769e11be1e2e2ac7465c1" style="width: 100.0%; height: 100.0%;">     <b>Corbin Hill Central Park Farm Stand</b><br>     Malcolm X Boulevard and Central Park North<br>     New York              <br><a href="http://corbinhillfoodproject.org/" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_76a1b57412411cea7c50840bcf292818.setContent(html_4660b8fbd1b769e11be1e2e2ac7465c1);
+            
+        
+
+        marker_5e20bc675b0e0ca625d301f9fdc873bf.bindPopup(popup_76a1b57412411cea7c50840bcf292818)
+        ;
+
+        
+    
+    
+            marker_5e20bc675b0e0ca625d301f9fdc873bf.bindTooltip(
+                `<div>
+                     Corbin Hill Central Park Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1bbdeb07b79fee415b564fea61b10b52 = L.marker(
+                [40.75333, -73.97027],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_488ca61b3b48f9e96b97f513fb96fe00 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63d2b244c63c8966882de3d6a4b63491 = $(`<div id="html_63d2b244c63c8966882de3d6a4b63491" style="width: 100.0%; height: 100.0%;">     <b>Dag Hammarskjold Plaza Greenmarket</b><br>     245 East 47th Street<br>     New York              <br><a href="http://www.grownyc.org/greenmarket/manhattan/dag-hammarskjold" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_488ca61b3b48f9e96b97f513fb96fe00.setContent(html_63d2b244c63c8966882de3d6a4b63491);
+            
+        
+
+        marker_1bbdeb07b79fee415b564fea61b10b52.bindPopup(popup_488ca61b3b48f9e96b97f513fb96fe00)
+        ;
+
+        
+    
+    
+            marker_1bbdeb07b79fee415b564fea61b10b52.bindTooltip(
+                `<div>
+                     Dag Hammarskjold Plaza Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_29b72b835f35ed4c72a1af3ae094e6e2 = L.marker(
+                [40.84246, -73.94245],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_3eb2f001a7c50dbcf0a638e1d6a0ccd3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_28e48d4055e6e10fa99146a1d3680953 = $(`<div id="html_28e48d4055e6e10fa99146a1d3680953" style="width: 100.0%; height: 100.0%;">     <b>Fort Washington Greenmarket</b><br>     701 West 168th Street<br>     New York              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_3eb2f001a7c50dbcf0a638e1d6a0ccd3.setContent(html_28e48d4055e6e10fa99146a1d3680953);
+            
+        
+
+        marker_29b72b835f35ed4c72a1af3ae094e6e2.bindPopup(popup_3eb2f001a7c50dbcf0a638e1d6a0ccd3)
+        ;
+
+        
+    
+    
+            marker_29b72b835f35ed4c72a1af3ae094e6e2.bindTooltip(
+                `<div>
+                     Fort Washington Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5e9eb011c8aa174d6f723cb4cd7d42c6 = L.marker(
+                [40.71321, -73.98779],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_e1838ee3221a2e7f327d9b904ca65834 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a4b7230feaf9991b7b6739c7610ce852 = $(`<div id="html_a4b7230feaf9991b7b6739c7610ce852" style="width: 100.0%; height: 100.0%;">     <b>Gouverneur Health GrowNYC Farm Stand</b><br>     227 Madison Street<br>     New York              <br><a href="https://www.grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_e1838ee3221a2e7f327d9b904ca65834.setContent(html_a4b7230feaf9991b7b6739c7610ce852);
+            
+        
+
+        marker_5e9eb011c8aa174d6f723cb4cd7d42c6.bindPopup(popup_e1838ee3221a2e7f327d9b904ca65834)
+        ;
+
+        
+    
+    
+            marker_5e9eb011c8aa174d6f723cb4cd7d42c6.bindTooltip(
+                `<div>
+                     Gouverneur Health GrowNYC Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_23b68893ff5cc9d0cf6b798a04115957 = L.marker(
+                [40.82365, -73.94385],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_565f09b0ee0732b200ae93a95528915b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a1a5ff43693e18647617d124fc9009f = $(`<div id="html_3a1a5ff43693e18647617d124fc9009f" style="width: 100.0%; height: 100.0%;">     <b>Grass Roots Farmers' Market</b><br>     W 145th St between Edgecombe Ave and Bradhurst Ave<br>     New York     </div>`)[0];
+                popup_565f09b0ee0732b200ae93a95528915b.setContent(html_3a1a5ff43693e18647617d124fc9009f);
+            
+        
+
+        marker_23b68893ff5cc9d0cf6b798a04115957.bindPopup(popup_565f09b0ee0732b200ae93a95528915b)
+        ;
+
+        
+    
+    
+            marker_23b68893ff5cc9d0cf6b798a04115957.bindTooltip(
+                `<div>
+                     Grass Roots Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cb54bb03a5aaa39b87c0425f2117b0c7 = L.marker(
+                [40.79024, -73.94564],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_cad3f68e91276481b787be7e4b2fade7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1912ed7a9b243746059f7a511221c35d = $(`<div id="html_1912ed7a9b243746059f7a511221c35d" style="width: 100.0%; height: 100.0%;">     <b>Harvest Home East Harlem Farmers' Market</b><br>     201 East 104th St<br>     New York              <br><a href="http://www.harvesthomefm.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_cad3f68e91276481b787be7e4b2fade7.setContent(html_1912ed7a9b243746059f7a511221c35d);
+            
+        
+
+        marker_cb54bb03a5aaa39b87c0425f2117b0c7.bindPopup(popup_cad3f68e91276481b787be7e4b2fade7)
+        ;
+
+        
+    
+    
+            marker_cb54bb03a5aaa39b87c0425f2117b0c7.bindTooltip(
+                `<div>
+                     Harvest Home East Harlem Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b47de5138c1ed03832d4d99b9012a89c = L.marker(
+                [40.81539, -73.93985],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_fa54e25c8a38c2cd842b7ac51d890e34 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_30712b11714f9241b22a33f46068eb45 = $(`<div id="html_30712b11714f9241b22a33f46068eb45" style="width: 100.0%; height: 100.0%;">     <b>Harvest Home Harlem Hospital Farmers' Market</b><br>     w. 137th Street and Lennox Avenue<br>     New York              <br><a href="http://www.harvesthomefm.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_fa54e25c8a38c2cd842b7ac51d890e34.setContent(html_30712b11714f9241b22a33f46068eb45);
+            
+        
+
+        marker_b47de5138c1ed03832d4d99b9012a89c.bindPopup(popup_fa54e25c8a38c2cd842b7ac51d890e34)
+        ;
+
+        
+    
+    
+            marker_b47de5138c1ed03832d4d99b9012a89c.bindTooltip(
+                `<div>
+                     Harvest Home Harlem Hospital Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ebfcd6e005afdb7b5532c4eed30a544f = L.marker(
+                [40.78553, -73.94615],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_6e1fb9a1451da53d8a72e7ea1be4b114 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d43bb73d8a5821fbde85dc187db955e3 = $(`<div id="html_d43bb73d8a5821fbde85dc187db955e3" style="width: 100.0%; height: 100.0%;">     <b>Harvest Home Metropolitan Farmers' Market</b><br>     266 E 97th Street<br>     New York              <br><a href="http://www.harvesthomefm.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_6e1fb9a1451da53d8a72e7ea1be4b114.setContent(html_d43bb73d8a5821fbde85dc187db955e3);
+            
+        
+
+        marker_ebfcd6e005afdb7b5532c4eed30a544f.bindPopup(popup_6e1fb9a1451da53d8a72e7ea1be4b114)
+        ;
+
+        
+    
+    
+            marker_ebfcd6e005afdb7b5532c4eed30a544f.bindTooltip(
+                `<div>
+                     Harvest Home Metropolitan Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ac647019c17f83947091d0e86a495b8c = L.marker(
+                [40.86925, -73.92066],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_c8957c68fa1ef1b644026ba1ad691af5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8dd6add5d95667512d4f339e8457547f = $(`<div id="html_8dd6add5d95667512d4f339e8457547f" style="width: 100.0%; height: 100.0%;">     <b>Inwood Greenmarket</b><br>     620 Isham Street<br>     New York              <br><a href="http://www.grownyc.org/greenmarket/manhattan/inwood" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_c8957c68fa1ef1b644026ba1ad691af5.setContent(html_8dd6add5d95667512d4f339e8457547f);
+            
+        
+
+        marker_ac647019c17f83947091d0e86a495b8c.bindPopup(popup_c8957c68fa1ef1b644026ba1ad691af5)
+        ;
+
+        
+    
+    
+            marker_ac647019c17f83947091d0e86a495b8c.bindTooltip(
+                `<div>
+                     Inwood Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_00b3ef03d8c8f1462bbb4840a971a50c = L.marker(
+                [40.76653, -73.95698],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_787c85cc7ad42d740849468c2f7e3873 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_559b67465ee250e91b03e5fe56e39d6c = $(`<div id="html_559b67465ee250e91b03e5fe56e39d6c" style="width: 100.0%; height: 100.0%;">     <b>Lenox Hill GrowNYC Farmstand</b><br>     70th St & 1st Ave<br>     New York              <br><a href="https://www.grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_787c85cc7ad42d740849468c2f7e3873.setContent(html_559b67465ee250e91b03e5fe56e39d6c);
+            
+        
+
+        marker_00b3ef03d8c8f1462bbb4840a971a50c.bindPopup(popup_787c85cc7ad42d740849468c2f7e3873)
+        ;
+
+        
+    
+    
+            marker_00b3ef03d8c8f1462bbb4840a971a50c.bindTooltip(
+                `<div>
+                     Lenox Hill GrowNYC Farmstand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_09aa796f6f2ed1ea2cce74680f4ca2a9 = L.marker(
+                [40.71523, -73.9843],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_2c22d8066da4d90619acd6984c54db70 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e685b41bbb7b8319a4fee644edcdb9a7 = $(`<div id="html_e685b41bbb7b8319a4fee644edcdb9a7" style="width: 100.0%; height: 100.0%;">     <b>Lower East Side GrowNYC Farm Stand</b><br>     Grand St and Pitt St<br>     New York              <br><a href="https://www.grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_2c22d8066da4d90619acd6984c54db70.setContent(html_e685b41bbb7b8319a4fee644edcdb9a7);
+            
+        
+
+        marker_09aa796f6f2ed1ea2cce74680f4ca2a9.bindPopup(popup_2c22d8066da4d90619acd6984c54db70)
+        ;
+
+        
+    
+    
+            marker_09aa796f6f2ed1ea2cce74680f4ca2a9.bindTooltip(
+                `<div>
+                     Lower East Side GrowNYC Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_916355e67dea0ca0304bbe211f8cc60d = L.marker(
+                [40.80173, -73.95915],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_905a7d58c569e1752bd01e03eee29c0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e0dc64b93678822fb70488d88cd761a = $(`<div id="html_1e0dc64b93678822fb70488d88cd761a" style="width: 100.0%; height: 100.0%;">     <b>Morningside Park Farmers' Market</b><br>     237 Manhattan Ave. (West 110th ST. and Manhattan Ave.)<br>     New York              <br><a href="http://www.downtoearthmarkets.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_905a7d58c569e1752bd01e03eee29c0a.setContent(html_1e0dc64b93678822fb70488d88cd761a);
+            
+        
+
+        marker_916355e67dea0ca0304bbe211f8cc60d.bindPopup(popup_905a7d58c569e1752bd01e03eee29c0a)
+        ;
+
+        
+    
+    
+            marker_916355e67dea0ca0304bbe211f8cc60d.bindTooltip(
+                `<div>
+                     Morningside Park Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_091d2602b20840e1353886c907d4c5e3 = L.marker(
+                [40.78874, -73.95276],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_75f0776b753736a3b27e5c35fbe57877 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63fe6a2514d515d6fa6933b1652ddfa9 = $(`<div id="html_63fe6a2514d515d6fa6933b1652ddfa9" style="width: 100.0%; height: 100.0%;">     <b>Mount Sinai Hospital Greenmarket</b><br>     1425 Madison Avenue<br>     New York              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_75f0776b753736a3b27e5c35fbe57877.setContent(html_63fe6a2514d515d6fa6933b1652ddfa9);
+            
+        
+
+        marker_091d2602b20840e1353886c907d4c5e3.bindPopup(popup_75f0776b753736a3b27e5c35fbe57877)
+        ;
+
+        
+    
+    
+            marker_091d2602b20840e1353886c907d4c5e3.bindTooltip(
+                `<div>
+                     Mount Sinai Hospital Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_caec6f170aaec0495199f82763edc7cc = L.marker(
+                [40.75907, -73.97846],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_874feaefaf80e98e82753d27e727443d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b6d21fc30006736e72b793bb21200ee = $(`<div id="html_8b6d21fc30006736e72b793bb21200ee" style="width: 100.0%; height: 100.0%;">     <b>Rockefeller Center Wed Greenmarket</b><br>     Rockefeller Plaza and West 50th St<br>     New York              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_874feaefaf80e98e82753d27e727443d.setContent(html_8b6d21fc30006736e72b793bb21200ee);
+            
+        
+
+        marker_caec6f170aaec0495199f82763edc7cc.bindPopup(popup_874feaefaf80e98e82753d27e727443d)
+        ;
+
+        
+    
+    
+            marker_caec6f170aaec0495199f82763edc7cc.bindTooltip(
+                `<div>
+                     Rockefeller Center Wed Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ebd32e53444886f2ca5e7877003f10fe = L.marker(
+                [40.78196, -73.94568],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_f1e8b0d13558ffe73e3342217312403c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0748b6335c11050136a1aa8f0c8a73d1 = $(`<div id="html_0748b6335c11050136a1aa8f0c8a73d1" style="width: 100.0%; height: 100.0%;">     <b>Ruppert Park Greenmarket</b><br>     90th St and 2nd Ave<br>     New York              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_f1e8b0d13558ffe73e3342217312403c.setContent(html_0748b6335c11050136a1aa8f0c8a73d1);
+            
+        
+
+        marker_ebd32e53444886f2ca5e7877003f10fe.bindPopup(popup_f1e8b0d13558ffe73e3342217312403c)
+        ;
+
+        
+    
+    
+            marker_ebd32e53444886f2ca5e7877003f10fe.bindTooltip(
+                `<div>
+                     Ruppert Park Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6438b22984998fcbb2bbaef2193568e4 = L.marker(
+                [40.71851, -73.98422],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_7a578c53af25aa8c072d0a84d8b00fa3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f779075251519bc1d185fa361d93a25c = $(`<div id="html_f779075251519bc1d185fa361d93a25c" style="width: 100.0%; height: 100.0%;">     <b>Seeds in the Middle Farm Stand-Lower E Side PS 63</b><br>     121 East 3rd Street<br>     New York              <br><a href="http://www.seedsinthemiddle.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_7a578c53af25aa8c072d0a84d8b00fa3.setContent(html_f779075251519bc1d185fa361d93a25c);
+            
+        
+
+        marker_6438b22984998fcbb2bbaef2193568e4.bindPopup(popup_7a578c53af25aa8c072d0a84d8b00fa3)
+        ;
+
+        
+    
+    
+            marker_6438b22984998fcbb2bbaef2193568e4.bindTooltip(
+                `<div>
+                     Seeds in the Middle Farm Stand-Lower E Side PS 63
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6769f4db7c8d5335dc0f4292c054acb9 = L.marker(
+                [40.72998, -73.97935],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_ac87e4ef2f885772db13fc06bac336d9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ef0866d5bb054784e2ddcf91af8ba70a = $(`<div id="html_ef0866d5bb054784e2ddcf91af8ba70a" style="width: 100.0%; height: 100.0%;">     <b>Stuyvesant Town Greenmarket</b><br>     East 14th Street Loop<br>     New York              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_ac87e4ef2f885772db13fc06bac336d9.setContent(html_ef0866d5bb054784e2ddcf91af8ba70a);
+            
+        
+
+        marker_6769f4db7c8d5335dc0f4292c054acb9.bindPopup(popup_ac87e4ef2f885772db13fc06bac336d9)
+        ;
+
+        
+    
+    
+            marker_6769f4db7c8d5335dc0f4292c054acb9.bindTooltip(
+                `<div>
+                     Stuyvesant Town Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_006820fd48fe8e33102631ea630a0daf = L.marker(
+                [40.72621, -73.9836],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_4fd07ea003637aae260a3c555b10b6f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_255a5e7874e4820f645fe1bf3316c798 = $(`<div id="html_255a5e7874e4820f645fe1bf3316c798" style="width: 100.0%; height: 100.0%;">     <b>Tompkins Square Greenmarket</b><br>     111 Avenue A<br>     New York              <br><a href="http://www.grownyc.org/greenmarket/manhattan/tompkins-square" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_4fd07ea003637aae260a3c555b10b6f0.setContent(html_255a5e7874e4820f645fe1bf3316c798);
+            
+        
+
+        marker_006820fd48fe8e33102631ea630a0daf.bindPopup(popup_4fd07ea003637aae260a3c555b10b6f0)
+        ;
+
+        
+    
+    
+            marker_006820fd48fe8e33102631ea630a0daf.bindTooltip(
+                `<div>
+                     Tompkins Square Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e59f1509cd67ca89a214bba6f5b9635a = L.marker(
+                [40.71697, -74.01062],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_00ecfe319ec54e728f615903e72aa6c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6631a9135eeb2ea8d3a6432546554ac = $(`<div id="html_e6631a9135eeb2ea8d3a6432546554ac" style="width: 100.0%; height: 100.0%;">     <b>Tribeca Greenmarket Saturday</b><br>     315 Greenwich St<br>     New York              <br><a href="http://www.grownyc.org/greenmarket/manhattan/tribeca-sa" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_00ecfe319ec54e728f615903e72aa6c6.setContent(html_e6631a9135eeb2ea8d3a6432546554ac);
+            
+        
+
+        marker_e59f1509cd67ca89a214bba6f5b9635a.bindPopup(popup_00ecfe319ec54e728f615903e72aa6c6)
+        ;
+
+        
+    
+    
+            marker_e59f1509cd67ca89a214bba6f5b9635a.bindTooltip(
+                `<div>
+                     Tribeca Greenmarket Saturday
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_75551634c641cf2c3b8e4f4f9a688ecf = L.marker(
+                [40.7731, -73.98171],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_8cfe41273c5efcac8d94b2625edf4faa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fa468c06a26bbdb518336e4607ad159e = $(`<div id="html_fa468c06a26bbdb518336e4607ad159e" style="width: 100.0%; height: 100.0%;">     <b>Tucker Square Saturday Greenmarket</b><br>     125 Columbus Ave<br>     New York              <br><a href="http://www.grownyc.org/greenmarket/manhattan/tuckerthursday" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_8cfe41273c5efcac8d94b2625edf4faa.setContent(html_fa468c06a26bbdb518336e4607ad159e);
+            
+        
+
+        marker_75551634c641cf2c3b8e4f4f9a688ecf.bindPopup(popup_8cfe41273c5efcac8d94b2625edf4faa)
+        ;
+
+        
+    
+    
+            marker_75551634c641cf2c3b8e4f4f9a688ecf.bindTooltip(
+                `<div>
+                     Tucker Square Saturday Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_895ccb848ecc8b7f3a5aeaf324306c0d = L.marker(
+                [40.7731, -73.98171],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_571c0a9091089708f70547546e285e90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c426f8c8670da113632617272391943d = $(`<div id="html_c426f8c8670da113632617272391943d" style="width: 100.0%; height: 100.0%;">     <b>Tucker Square Thursday Greenmarket</b><br>     125 Columbus Avenue<br>     New York              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_571c0a9091089708f70547546e285e90.setContent(html_c426f8c8670da113632617272391943d);
+            
+        
+
+        marker_895ccb848ecc8b7f3a5aeaf324306c0d.bindPopup(popup_571c0a9091089708f70547546e285e90)
+        ;
+
+        
+    
+    
+            marker_895ccb848ecc8b7f3a5aeaf324306c0d.bindTooltip(
+                `<div>
+                     Tucker Square Thursday Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7515024edecb80ff02f7b804646df9a5 = L.marker(
+                [40.71166, -73.99784],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_7e78512c9ec929ecd9dd826d8b0dc921 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a603a3ca91336d047d0621918f8d6a38 = $(`<div id="html_a603a3ca91336d047d0621918f8d6a38" style="width: 100.0%; height: 100.0%;">     <b>Two Bridges Youth Market Farm Stand</b><br>     50 Madison St.<br>     New York              <br><a href="http://fultonstallmarket.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_7e78512c9ec929ecd9dd826d8b0dc921.setContent(html_a603a3ca91336d047d0621918f8d6a38);
+            
+        
+
+        marker_7515024edecb80ff02f7b804646df9a5.bindPopup(popup_7e78512c9ec929ecd9dd826d8b0dc921)
+        ;
+
+        
+    
+    
+            marker_7515024edecb80ff02f7b804646df9a5.bindTooltip(
+                `<div>
+                     Two Bridges Youth Market Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f418f46a8d54673629900dfc1a98c0a7 = L.marker(
+                [40.73669, -73.99079],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_2d2c15ede7e249a8b790d6a089394d6f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2ce7862ee44fc188dc3d90074599f04 = $(`<div id="html_b2ce7862ee44fc188dc3d90074599f04" style="width: 100.0%; height: 100.0%;">     <b>Union Square Friday Greenmarket</b><br>     31 Union Square West<br>     New York              <br><a href="https://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_2d2c15ede7e249a8b790d6a089394d6f.setContent(html_b2ce7862ee44fc188dc3d90074599f04);
+            
+        
+
+        marker_f418f46a8d54673629900dfc1a98c0a7.bindPopup(popup_2d2c15ede7e249a8b790d6a089394d6f)
+        ;
+
+        
+    
+    
+            marker_f418f46a8d54673629900dfc1a98c0a7.bindTooltip(
+                `<div>
+                     Union Square Friday Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_86e89a3490c071341c3d90e254cc37db = L.marker(
+                [40.73669, -73.99079],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_df5acf47fc41e7116dde4863f0b5e24d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af3efed8f19eefaf8a24fbeb6bdac097 = $(`<div id="html_af3efed8f19eefaf8a24fbeb6bdac097" style="width: 100.0%; height: 100.0%;">     <b>Union Square Monday Greenmarket</b><br>     31 Union Square West<br>     New York              <br><a href="https://www.grownyc.org/greenmarket/manhattan-union-square-w" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_df5acf47fc41e7116dde4863f0b5e24d.setContent(html_af3efed8f19eefaf8a24fbeb6bdac097);
+            
+        
+
+        marker_86e89a3490c071341c3d90e254cc37db.bindPopup(popup_df5acf47fc41e7116dde4863f0b5e24d)
+        ;
+
+        
+    
+    
+            marker_86e89a3490c071341c3d90e254cc37db.bindTooltip(
+                `<div>
+                     Union Square Monday Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3a75e45227fc23d6ae7b5d627fb49ade = L.marker(
+                [40.73669, -73.99079],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_aa908cae8b0c0548b95d1e914c1c9b1f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43300f610b07138b2fba3641e254c38c = $(`<div id="html_43300f610b07138b2fba3641e254c38c" style="width: 100.0%; height: 100.0%;">     <b>Union Square Saturday Greenmarket</b><br>     31 Union Square West<br>     New York              <br><a href="https://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_aa908cae8b0c0548b95d1e914c1c9b1f.setContent(html_43300f610b07138b2fba3641e254c38c);
+            
+        
+
+        marker_3a75e45227fc23d6ae7b5d627fb49ade.bindPopup(popup_aa908cae8b0c0548b95d1e914c1c9b1f)
+        ;
+
+        
+    
+    
+            marker_3a75e45227fc23d6ae7b5d627fb49ade.bindTooltip(
+                `<div>
+                     Union Square Saturday Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_42db2c21c6c525004eee3437c6566f29 = L.marker(
+                [40.73669, -73.99079],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_30e1cc659bd0ae8960da3ce0d5942a63 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44bccb76948c1e6b1a457aa9e877d891 = $(`<div id="html_44bccb76948c1e6b1a457aa9e877d891" style="width: 100.0%; height: 100.0%;">     <b>Union Square Wednesday Greenmarket</b><br>     31 Union Square West<br>     New York              <br><a href="https://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_30e1cc659bd0ae8960da3ce0d5942a63.setContent(html_44bccb76948c1e6b1a457aa9e877d891);
+            
+        
+
+        marker_42db2c21c6c525004eee3437c6566f29.bindPopup(popup_30e1cc659bd0ae8960da3ce0d5942a63)
+        ;
+
+        
+    
+    
+            marker_42db2c21c6c525004eee3437c6566f29.bindTooltip(
+                `<div>
+                     Union Square Wednesday Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_772ed8d25015f0c22b3457b20833e664 = L.marker(
+                [40.81176, -73.95167],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_12d9aad66d2bf67b4985922aaa2e426c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2bce8cbe261d5788e17a337ca597169c = $(`<div id="html_2bce8cbe261d5788e17a337ca597169c" style="width: 100.0%; height: 100.0%;">     <b>Uptown Good Food Farm Stand</b><br>     330 St. Nicholas Ave<br>     New York     </div>`)[0];
+                popup_12d9aad66d2bf67b4985922aaa2e426c.setContent(html_2bce8cbe261d5788e17a337ca597169c);
+            
+        
+
+        marker_772ed8d25015f0c22b3457b20833e664.bindPopup(popup_12d9aad66d2bf67b4985922aaa2e426c)
+        ;
+
+        
+    
+    
+            marker_772ed8d25015f0c22b3457b20833e664.bindTooltip(
+                `<div>
+                     Uptown Good Food Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b39d62289802b313059ad5cfd088e725 = L.marker(
+                [40.81856, -73.94745],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_c9920b52fe16f7bb065ce243977fd38e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00abe67114888a65783bce4f23ed7ee0 = $(`<div id="html_00abe67114888a65783bce4f23ed7ee0" style="width: 100.0%; height: 100.0%;">     <b>Uptown Good Food Farmers' Market</b><br>     St. Nicholas Ave & West 137th St<br>     New York     </div>`)[0];
+                popup_c9920b52fe16f7bb065ce243977fd38e.setContent(html_00abe67114888a65783bce4f23ed7ee0);
+            
+        
+
+        marker_b39d62289802b313059ad5cfd088e725.bindPopup(popup_c9920b52fe16f7bb065ce243977fd38e)
+        ;
+
+        
+    
+    
+            marker_b39d62289802b313059ad5cfd088e725.bindTooltip(
+                `<div>
+                     Uptown Good Food Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ea2f816a0df11e78654e6aa203c7d15d = L.marker(
+                [40.80513, -73.93921],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_55377c22e63d994787428283e549a548 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e10419d4bc09fb338bbed6337429a8f = $(`<div id="html_9e10419d4bc09fb338bbed6337429a8f" style="width: 100.0%; height: 100.0%;">     <b>Uptown Grand Central GrowNYC Farmstand</b><br>     125th Street and Park Ave<br>     New York              <br><a href="https://www.grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_55377c22e63d994787428283e549a548.setContent(html_9e10419d4bc09fb338bbed6337429a8f);
+            
+        
+
+        marker_ea2f816a0df11e78654e6aa203c7d15d.bindPopup(popup_55377c22e63d994787428283e549a548)
+        ;
+
+        
+    
+    
+            marker_ea2f816a0df11e78654e6aa203c7d15d.bindTooltip(
+                `<div>
+                     Uptown Grand Central GrowNYC Farmstand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_67e46c942f338b8adf1c3383c2ea9c57 = L.marker(
+                [40.74994, -73.86221],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_f3c041854fc8c9e1c11d6008f99ad425 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9e571f02a77007a4f81dab57fdb32d78 = $(`<div id="html_9e571f02a77007a4f81dab57fdb32d78" style="width: 100.0%; height: 100.0%;">     <b>Corona Greenmarket</b><br>     103-28 Roosevelt Ave<br>     Corona              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_f3c041854fc8c9e1c11d6008f99ad425.setContent(html_9e571f02a77007a4f81dab57fdb32d78);
+            
+        
+
+        marker_67e46c942f338b8adf1c3383c2ea9c57.bindPopup(popup_f3c041854fc8c9e1c11d6008f99ad425)
+        ;
+
+        
+    
+    
+            marker_67e46c942f338b8adf1c3383c2ea9c57.bindTooltip(
+                `<div>
+                     Corona Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2b6a50f7ac33964f70192d8b02dec98b = L.marker(
+                [40.73087, -73.77457],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_186070942a3cd680ea676ce24fd71119 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3618cf5ed3ca9610fe23afa5312e85fe = $(`<div id="html_3618cf5ed3ca9610fe23afa5312e85fe" style="width: 100.0%; height: 100.0%;">     <b>Cunningham Park Farmers' Market</b><br>     19600 Union Turnpike<br>     Queens              <br><a href="http://www.downtoearthmarkets.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_186070942a3cd680ea676ce24fd71119.setContent(html_3618cf5ed3ca9610fe23afa5312e85fe);
+            
+        
+
+        marker_2b6a50f7ac33964f70192d8b02dec98b.bindPopup(popup_186070942a3cd680ea676ce24fd71119)
+        ;
+
+        
+    
+    
+            marker_2b6a50f7ac33964f70192d8b02dec98b.bindTooltip(
+                `<div>
+                     Cunningham Park Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a8f8504328c5549b83fc0b7f0fbc4d2f = L.marker(
+                [40.59536, -73.77654],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_b1ec783aa542c45fa1b92319ccb6d096 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc810bfa5c596ca177395afdfdb244e6 = $(`<div id="html_fc810bfa5c596ca177395afdfdb244e6" style="width: 100.0%; height: 100.0%;">     <b>Edgemere Farm Stand</b><br>     385 Beach 45th Street<br>     Far Rockaway              <br><a href="http://www.edgemerefarm.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_b1ec783aa542c45fa1b92319ccb6d096.setContent(html_fc810bfa5c596ca177395afdfdb244e6);
+            
+        
+
+        marker_a8f8504328c5549b83fc0b7f0fbc4d2f.bindPopup(popup_b1ec783aa542c45fa1b92319ccb6d096)
+        ;
+
+        
+    
+    
+            marker_a8f8504328c5549b83fc0b7f0fbc4d2f.bindTooltip(
+                `<div>
+                     Edgemere Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_94692f25fe6774e73ccac70f3c2931e6 = L.marker(
+                [40.74584, -73.88622],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_d6820e666c589f5b6dbfab4048929343 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c271488ba24981a62b96f64c62a9087d = $(`<div id="html_c271488ba24981a62b96f64c62a9087d" style="width: 100.0%; height: 100.0%;">     <b>Elmhurst Hospital Greenmarket</b><br>     79-11 41st Avenue<br>     Elmhurst              <br><a href="http://www.grownyc.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_d6820e666c589f5b6dbfab4048929343.setContent(html_c271488ba24981a62b96f64c62a9087d);
+            
+        
+
+        marker_94692f25fe6774e73ccac70f3c2931e6.bindPopup(popup_d6820e666c589f5b6dbfab4048929343)
+        ;
+
+        
+    
+    
+            marker_94692f25fe6774e73ccac70f3c2931e6.bindTooltip(
+                `<div>
+                     Elmhurst Hospital Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6648b61bd9a5bb1d76f43e4f6883daa4 = L.marker(
+                [40.595287, -73.776572],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_70434e2ae14d7763abadc59dabefedf3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f7301fc87f77003fe53969eff902703 = $(`<div id="html_3f7301fc87f77003fe53969eff902703" style="width: 100.0%; height: 100.0%;">     <b>Far Rock Farm Stand</b><br>     378 Beach 45th Street<br>     Far Rockaway              <br><a href="http://tcahnyc.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_70434e2ae14d7763abadc59dabefedf3.setContent(html_3f7301fc87f77003fe53969eff902703);
+            
+        
+
+        marker_6648b61bd9a5bb1d76f43e4f6883daa4.bindPopup(popup_70434e2ae14d7763abadc59dabefedf3)
+        ;
+
+        
+    
+    
+            marker_6648b61bd9a5bb1d76f43e4f6883daa4.bindTooltip(
+                `<div>
+                     Far Rock Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ca68b0ca380b16ef101ca27ca57c9a94 = L.marker(
+                [40.75663, -73.82554],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_18304335f9a3f2861c262451d6cc2768 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65b67e48d13c69ba34ee9534cc140f86 = $(`<div id="html_65b67e48d13c69ba34ee9534cc140f86" style="width: 100.0%; height: 100.0%;">     <b>Flushing Greenmarket</b><br>     42-45 Kissena Boulevard<br>     Flushing              <br><a href="https://www.grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_18304335f9a3f2861c262451d6cc2768.setContent(html_65b67e48d13c69ba34ee9534cc140f86);
+            
+        
+
+        marker_ca68b0ca380b16ef101ca27ca57c9a94.bindPopup(popup_18304335f9a3f2861c262451d6cc2768)
+        ;
+
+        
+    
+    
+            marker_ca68b0ca380b16ef101ca27ca57c9a94.bindTooltip(
+                `<div>
+                     Flushing Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_53f053a420904401d2ce9c3d1f885743 = L.marker(
+                [40.72193, -73.84676],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_7b33bf6249e3b1d45e0b983115a97012 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d64028331e0075f42a3696fa865d0e4a = $(`<div id="html_d64028331e0075f42a3696fa865d0e4a" style="width: 100.0%; height: 100.0%;">     <b>Forest Hills Greenmarket</b><br>     106-28 Queens Blvd.<br>     Queens              <br><a href="http://www.grownyc.org/greenmarket/queens/forest-hills" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_7b33bf6249e3b1d45e0b983115a97012.setContent(html_d64028331e0075f42a3696fa865d0e4a);
+            
+        
+
+        marker_53f053a420904401d2ce9c3d1f885743.bindPopup(popup_7b33bf6249e3b1d45e0b983115a97012)
+        ;
+
+        
+    
+    
+            marker_53f053a420904401d2ce9c3d1f885743.bindTooltip(
+                `<div>
+                     Forest Hills Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0a0258bcfdabe8b9fb9b80c69e08617a = L.marker(
+                [40.70109, -73.84191],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_a3da4862e1855e96d3ca1175dce873fa = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_40fb5e0299115c181f9c9285b625c36c = $(`<div id="html_40fb5e0299115c181f9c9285b625c36c" style="width: 100.0%; height: 100.0%;">     <b>Forest Park GrowNYC Farm Stand</b><br>     Myrtle Ave<br>     Richmond Hill              <br><a href="https://www.grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_a3da4862e1855e96d3ca1175dce873fa.setContent(html_40fb5e0299115c181f9c9285b625c36c);
+            
+        
+
+        marker_0a0258bcfdabe8b9fb9b80c69e08617a.bindPopup(popup_a3da4862e1855e96d3ca1175dce873fa)
+        ;
+
+        
+    
+    
+            marker_0a0258bcfdabe8b9fb9b80c69e08617a.bindTooltip(
+                `<div>
+                     Forest Park GrowNYC Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_24a7129a7a6a0be4538f0e2b39a1e02f = L.marker(
+                [40.7535, -73.88791],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_0af19088ae2e6e1da56528eec8b9d68c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1d1b15479dfaac506da16f300572487 = $(`<div id="html_b1d1b15479dfaac506da16f300572487" style="width: 100.0%; height: 100.0%;">     <b>Jackson Heights Greenmarket</b><br>     78-99 34th Ave<br>     Jackson Heights              <br><a href="http://www.grownyc.org/greenmarket/queens/jackson-heights" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_0af19088ae2e6e1da56528eec8b9d68c.setContent(html_b1d1b15479dfaac506da16f300572487);
+            
+        
+
+        marker_24a7129a7a6a0be4538f0e2b39a1e02f.bindPopup(popup_0af19088ae2e6e1da56528eec8b9d68c)
+        ;
+
+        
+    
+    
+            marker_24a7129a7a6a0be4538f0e2b39a1e02f.bindTooltip(
+                `<div>
+                     Jackson Heights Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0fc004ad28c30bede1850838ae6cdb90 = L.marker(
+                [40.70222, -73.81767],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_196b499352f3d7ccd55bdbca47a08f1a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cff5af6651a1f53fdb690d005a4272c0 = $(`<div id="html_cff5af6651a1f53fdb690d005a4272c0" style="width: 100.0%; height: 100.0%;">     <b>Perez Farm Stand-Jamaica Hospital</b><br>     134-20 Jamaica Ave<br>     Queens     </div>`)[0];
+                popup_196b499352f3d7ccd55bdbca47a08f1a.setContent(html_cff5af6651a1f53fdb690d005a4272c0);
+            
+        
+
+        marker_0fc004ad28c30bede1850838ae6cdb90.bindPopup(popup_196b499352f3d7ccd55bdbca47a08f1a)
+        ;
+
+        
+    
+    
+            marker_0fc004ad28c30bede1850838ae6cdb90.bindTooltip(
+                `<div>
+                     Perez Farm Stand-Jamaica Hospital
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_094fb9ace85a63176ab88187515b85b7 = L.marker(
+                [40.74818, -73.72124],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_6434375f91cb464d991cc7202b5d8440 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_026457b48974d7ede81683eed8477c70 = $(`<div id="html_026457b48974d7ede81683eed8477c70" style="width: 100.0%; height: 100.0%;">     <b>Queens County Farm Museum Farm Stand</b><br>     73-50 Little Neck Parkway<br>     Queens              <br><a href="http://www.queensfarm.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_6434375f91cb464d991cc7202b5d8440.setContent(html_026457b48974d7ede81683eed8477c70);
+            
+        
+
+        marker_094fb9ace85a63176ab88187515b85b7.bindPopup(popup_6434375f91cb464d991cc7202b5d8440)
+        ;
+
+        
+    
+    
+            marker_094fb9ace85a63176ab88187515b85b7.bindTooltip(
+                `<div>
+                     Queens County Farm Museum Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0f0a5203656c45b3edd2f874f51b6adb = L.marker(
+                [40.71395, -73.82972],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_95dfc70bfe0d066dafea780f86119347 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c09840d7a2899449db9c225049c42b0 = $(`<div id="html_2c09840d7a2899449db9c225049c42b0" style="width: 100.0%; height: 100.0%;">     <b>Queens County Farm Museum-Borough Hall</b><br>     120-55 Queens Boulevard<br>     Queens              <br><a href="http://www.queensfarm.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_95dfc70bfe0d066dafea780f86119347.setContent(html_2c09840d7a2899449db9c225049c42b0);
+            
+        
+
+        marker_0f0a5203656c45b3edd2f874f51b6adb.bindPopup(popup_95dfc70bfe0d066dafea780f86119347)
+        ;
+
+        
+    
+    
+            marker_0f0a5203656c45b3edd2f874f51b6adb.bindTooltip(
+                `<div>
+                     Queens County Farm Museum-Borough Hall
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_21536dbc26dd1c777f4c5b11579d27c9 = L.marker(
+                [40.70134, -73.81631],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_8af217f13557f2a45ffecb934dad4d49 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_279432b92c8d24f926e18bf12f33df96 = $(`<div id="html_279432b92c8d24f926e18bf12f33df96" style="width: 100.0%; height: 100.0%;">     <b>Queens County Farm-Jamaica Hospital Farm Stand</b><br>     134-20 Jamaica Avenue<br>     Richmond Hill              <br><a href="http://www.queensfarm.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_8af217f13557f2a45ffecb934dad4d49.setContent(html_279432b92c8d24f926e18bf12f33df96);
+            
+        
+
+        marker_21536dbc26dd1c777f4c5b11579d27c9.bindPopup(popup_8af217f13557f2a45ffecb934dad4d49)
+        ;
+
+        
+    
+    
+            marker_21536dbc26dd1c777f4c5b11579d27c9.bindTooltip(
+                `<div>
+                     Queens County Farm-Jamaica Hospital Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a0ae1ba710adb1d526d67060778e3275 = L.marker(
+                [40.70011, -73.90619],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_c4f751f54fec17814c9e6b899cbcfdd1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9ffe62dc0b4e9f4184c15c09bf49229 = $(`<div id="html_c9ffe62dc0b4e9f4184c15c09bf49229" style="width: 100.0%; height: 100.0%;">     <b>Ridgewood GrowNYC Farm Stand</b><br>     Myrtle Ave and Cypress Ave<br>     Ridgewood              <br><a href="https://www.grownyc.org/farmstands" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_c4f751f54fec17814c9e6b899cbcfdd1.setContent(html_c9ffe62dc0b4e9f4184c15c09bf49229);
+            
+        
+
+        marker_a0ae1ba710adb1d526d67060778e3275.bindPopup(popup_c4f751f54fec17814c9e6b899cbcfdd1)
+        ;
+
+        
+    
+    
+            marker_a0ae1ba710adb1d526d67060778e3275.bindTooltip(
+                `<div>
+                     Ridgewood GrowNYC Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8c8b2c814e712b8e81709a6ade03ae83 = L.marker(
+                [40.74714, -73.92242],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_783f5683c41286e9e8c5c4f2eb1c2bba = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_842cd3ff5552f2c803b2bdb4f6f4bf64 = $(`<div id="html_842cd3ff5552f2c803b2bdb4f6f4bf64" style="width: 100.0%; height: 100.0%;">     <b>Sunnyside Greenmarket</b><br>     41-15 Skillman Ave<br>     Sunnyside              <br><a href="http://www.grownyc.org/greenmarket/queens/sunnyside" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_783f5683c41286e9e8c5c4f2eb1c2bba.setContent(html_842cd3ff5552f2c803b2bdb4f6f4bf64);
+            
+        
+
+        marker_8c8b2c814e712b8e81709a6ade03ae83.bindPopup(popup_783f5683c41286e9e8c5c4f2eb1c2bba)
+        ;
+
+        
+    
+    
+            marker_8c8b2c814e712b8e81709a6ade03ae83.bindTooltip(
+                `<div>
+                     Sunnyside Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3316fd431c51da077e39e2658db2bb2b = L.marker(
+                [40.63794, -74.0979],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_db7512468045b145833b261a88c6b031 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ed46af98581543a7dd29d8e0b2e8b5c = $(`<div id="html_4ed46af98581543a7dd29d8e0b2e8b5c" style="width: 100.0%; height: 100.0%;">     <b>Children's Aid-Goodhue Center</b><br>     304 Prospect Avenue<br>     Staten Island              <br><a href="http://childrensaidnyc.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_db7512468045b145833b261a88c6b031.setContent(html_4ed46af98581543a7dd29d8e0b2e8b5c);
+            
+        
+
+        marker_3316fd431c51da077e39e2658db2bb2b.bindPopup(popup_db7512468045b145833b261a88c6b031)
+        ;
+
+        
+    
+    
+            marker_3316fd431c51da077e39e2658db2bb2b.bindTooltip(
+                `<div>
+                     Children's Aid-Goodhue Center
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_90dd2aff5d0bffd61b0e1c714aa9a254 = L.marker(
+                [40.64159, -74.07791],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_83b4aa03fb6a01ee25ca0b22c0d97f27 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f995b6e52de5f62e8e72f0fc5d2e669f = $(`<div id="html_f995b6e52de5f62e8e72f0fc5d2e669f" style="width: 100.0%; height: 100.0%;">     <b>St George Greenmarket</b><br>     35 Hyatt Street<br>     Staten Island              <br><a href="http://www.grownyc.org/greenmarket/staten-island/saint-george" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_83b4aa03fb6a01ee25ca0b22c0d97f27.setContent(html_f995b6e52de5f62e8e72f0fc5d2e669f);
+            
+        
+
+        marker_90dd2aff5d0bffd61b0e1c714aa9a254.bindPopup(popup_83b4aa03fb6a01ee25ca0b22c0d97f27)
+        ;
+
+        
+    
+    
+            marker_90dd2aff5d0bffd61b0e1c714aa9a254.bindTooltip(
+                `<div>
+                     St George Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c6e6c7dbb6591b1b8d6a067791d40de7 = L.marker(
+                [40.58333, -74.16089],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_306f52d4a560ea54fdbe4875a32d3c96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_59fc3da63f0aa17fab9262db63ce62f8 = $(`<div id="html_59fc3da63f0aa17fab9262db63ce62f8" style="width: 100.0%; height: 100.0%;">     <b>Staten Island Mall Greenmarket</b><br>     77 Marsh Avenue<br>     Staten Island              <br><a href="http://www.grownyc.org/greenmarket" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_306f52d4a560ea54fdbe4875a32d3c96.setContent(html_59fc3da63f0aa17fab9262db63ce62f8);
+            
+        
+
+        marker_c6e6c7dbb6591b1b8d6a067791d40de7.bindPopup(popup_306f52d4a560ea54fdbe4875a32d3c96)
+        ;
+
+        
+    
+    
+            marker_c6e6c7dbb6591b1b8d6a067791d40de7.bindTooltip(
+                `<div>
+                     Staten Island Mall Greenmarket
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4ece73f7f4b07af70839697e58bf71f2 = L.marker(
+                [40.77235, -73.24614],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_8b8c81a3c3a2409b12f5f602d079eb6d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_507484e63a86d2d11274dd2055e98edf = $(`<div id="html_507484e63a86d2d11274dd2055e98edf" style="width: 100.0%; height: 100.0%;">     <b>Al's Farm Stand</b><br>     405 Locust Avenue<br>     Oakdale              <br><a href="http://www.familyres.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_8b8c81a3c3a2409b12f5f602d079eb6d.setContent(html_507484e63a86d2d11274dd2055e98edf);
+            
+        
+
+        marker_4ece73f7f4b07af70839697e58bf71f2.bindPopup(popup_8b8c81a3c3a2409b12f5f602d079eb6d)
+        ;
+
+        
+    
+    
+            marker_4ece73f7f4b07af70839697e58bf71f2.bindTooltip(
+                `<div>
+                     Al's Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2d12bef389844fda72c6ac7f9f14e00e = L.marker(
+                [40.94993, -72.80243],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_0e2791f01a149bef2c6e780cf7ad47be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b27c3449675a4ac25ffa977b6011047 = $(`<div id="html_7b27c3449675a4ac25ffa977b6011047" style="width: 100.0%; height: 100.0%;">     <b>Andrews Family Farm Farm Stand</b><br>     1038 Sound Ave<br>     Calverton     </div>`)[0];
+                popup_0e2791f01a149bef2c6e780cf7ad47be.setContent(html_7b27c3449675a4ac25ffa977b6011047);
+            
+        
+
+        marker_2d12bef389844fda72c6ac7f9f14e00e.bindPopup(popup_0e2791f01a149bef2c6e780cf7ad47be)
+        ;
+
+        
+    
+    
+            marker_2d12bef389844fda72c6ac7f9f14e00e.bindTooltip(
+                `<div>
+                     Andrews Family Farm Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_14626e1dfee4cb1f176b118e4f58b807 = L.marker(
+                [40.69455, -73.32978],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_bbf50fdb0bf3ebc4c4beda4b02c3f547 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d73764e47c6a73c0f86b30fbd288bd38 = $(`<div id="html_d73764e47c6a73c0f86b30fbd288bd38" style="width: 100.0%; height: 100.0%;">     <b>Babylon Village Farmers' Market</b><br>     244 West Main St<br>     Babylon              <br><a href="http://www.longislandfarmersmarkets.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_bbf50fdb0bf3ebc4c4beda4b02c3f547.setContent(html_d73764e47c6a73c0f86b30fbd288bd38);
+            
+        
+
+        marker_14626e1dfee4cb1f176b118e4f58b807.bindPopup(popup_bbf50fdb0bf3ebc4c4beda4b02c3f547)
+        ;
+
+        
+    
+    
+            marker_14626e1dfee4cb1f176b118e4f58b807.bindTooltip(
+                `<div>
+                     Babylon Village Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b5b145159d79c44ecaf5d218d66730c5 = L.marker(
+                [40.76618, -73.33076],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_cb36c3f24483639dbc9dc4f0bb9ac407 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df235c5b906f5dba9f63f6a3068cc002 = $(`<div id="html_df235c5b906f5dba9f63f6a3068cc002" style="width: 100.0%; height: 100.0%;">     <b>Dobler Farm Stand</b><br>     1989 Deer Park Avenue<br>     Deer Park     </div>`)[0];
+                popup_cb36c3f24483639dbc9dc4f0bb9ac407.setContent(html_df235c5b906f5dba9f63f6a3068cc002);
+            
+        
+
+        marker_b5b145159d79c44ecaf5d218d66730c5.bindPopup(popup_cb36c3f24483639dbc9dc4f0bb9ac407)
+        ;
+
+        
+    
+    
+            marker_b5b145159d79c44ecaf5d218d66730c5.bindTooltip(
+                `<div>
+                     Dobler Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3792cecbef746a3073ba9cf2e6fe35f2 = L.marker(
+                [40.77329, -72.90525],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_b8627f2ebb5b0536b6b60f645a6bde69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c1a3c42ff8902f902086d929bcdf6a1 = $(`<div id="html_9c1a3c42ff8902f902086d929bcdf6a1" style="width: 100.0%; height: 100.0%;">     <b>HOG Farm Stand-Brookhaven</b><br>     319 Beaverdam Rd<br>     Brookhaven              <br><a href="http://thehogfarm.org" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_b8627f2ebb5b0536b6b60f645a6bde69.setContent(html_9c1a3c42ff8902f902086d929bcdf6a1);
+            
+        
+
+        marker_3792cecbef746a3073ba9cf2e6fe35f2.bindPopup(popup_b8627f2ebb5b0536b6b60f645a6bde69)
+        ;
+
+        
+    
+    
+            marker_3792cecbef746a3073ba9cf2e6fe35f2.bindTooltip(
+                `<div>
+                     HOG Farm Stand-Brookhaven
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d98db8559f38870d8e18269f18d830fd = L.marker(
+                [40.87163, -73.42456],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_f8504914001c996a727f8a6b089b7d83 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6706eee451fc8f0c636d2196f3c27c9e = $(`<div id="html_6706eee451fc8f0c636d2196f3c27c9e" style="width: 100.0%; height: 100.0%;">     <b>Huntington Village Farmers' Market</b><br>     228 Main St<br>     Huntington              <br><a href="http://www.longislandfarmersmarkets.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_f8504914001c996a727f8a6b089b7d83.setContent(html_6706eee451fc8f0c636d2196f3c27c9e);
+            
+        
+
+        marker_d98db8559f38870d8e18269f18d830fd.bindPopup(popup_f8504914001c996a727f8a6b089b7d83)
+        ;
+
+        
+    
+    
+            marker_d98db8559f38870d8e18269f18d830fd.bindTooltip(
+                `<div>
+                     Huntington Village Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4c20e458f8f6a7ebdc9d6fdf9c2c33fa = L.marker(
+                [40.72975, -73.21077],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_772f51524e9e0b3c955c7cb81beadb4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_51b8c39017be73c54013845b6548e57e = $(`<div id="html_51b8c39017be73c54013845b6548e57e" style="width: 100.0%; height: 100.0%;">     <b>Islip Farmers' Market</b><br>     655 Main Street<br>     Islip              <br><a href="http://www.longislandgrowersmarket.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_772f51524e9e0b3c955c7cb81beadb4a.setContent(html_51b8c39017be73c54013845b6548e57e);
+            
+        
+
+        marker_4c20e458f8f6a7ebdc9d6fdf9c2c33fa.bindPopup(popup_772f51524e9e0b3c955c7cb81beadb4a)
+        ;
+
+        
+    
+    
+            marker_4c20e458f8f6a7ebdc9d6fdf9c2c33fa.bindTooltip(
+                `<div>
+                     Islip Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b531b7b904224b07e259bb90b67acaf9 = L.marker(
+                [40.85099, -73.38016],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_f51e394cee01d6e88750c916dc3bd73a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d638a6c8e64d7875ef1fee7493f9936b = $(`<div id="html_d638a6c8e64d7875ef1fee7493f9936b" style="width: 100.0%; height: 100.0%;">     <b>John Gardiner Farm Stand</b><br>     900 Park Avenue<br>     Huntington     </div>`)[0];
+                popup_f51e394cee01d6e88750c916dc3bd73a.setContent(html_d638a6c8e64d7875ef1fee7493f9936b);
+            
+        
+
+        marker_b531b7b904224b07e259bb90b67acaf9.bindPopup(popup_f51e394cee01d6e88750c916dc3bd73a)
+        ;
+
+        
+    
+    
+            marker_b531b7b904224b07e259bb90b67acaf9.bindTooltip(
+                `<div>
+                     John Gardiner Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_097e778d4c51a1f2cb04edd4a9f98d69 = L.marker(
+                [40.68741, -73.37403],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_02d606d814359049baeeeb08dbff6047 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6cfafef48d957318f07245c0092b2389 = $(`<div id="html_6cfafef48d957318f07245c0092b2389" style="width: 100.0%; height: 100.0%;">     <b>Lindenhurst Farmers' Market</b><br>     116 North Wellwood Avenue<br>     Lindenhurst     </div>`)[0];
+                popup_02d606d814359049baeeeb08dbff6047.setContent(html_6cfafef48d957318f07245c0092b2389);
+            
+        
+
+        marker_097e778d4c51a1f2cb04edd4a9f98d69.bindPopup(popup_02d606d814359049baeeeb08dbff6047)
+        ;
+
+        
+    
+    
+            marker_097e778d4c51a1f2cb04edd4a9f98d69.bindTooltip(
+                `<div>
+                     Lindenhurst Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c15db41ed805609407882d1ff373fce3 = L.marker(
+                [41.03436, -71.94424],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_72b615c282510816d83ba5c1fb7d3f23 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c4037ed6708cb711a839c1880c51c368 = $(`<div id="html_c4037ed6708cb711a839c1880c51c368" style="width: 100.0%; height: 100.0%;">     <b>Montauk Farmers' Market</b><br>     742 Montauk Hwy<br>     Montauk              <br><a href="https://montaukchamber.com/montauk-farmers-market/" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_72b615c282510816d83ba5c1fb7d3f23.setContent(html_c4037ed6708cb711a839c1880c51c368);
+            
+        
+
+        marker_c15db41ed805609407882d1ff373fce3.bindPopup(popup_72b615c282510816d83ba5c1fb7d3f23)
+        ;
+
+        
+    
+    
+            marker_c15db41ed805609407882d1ff373fce3.bindTooltip(
+                `<div>
+                     Montauk Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4e16b8998ea894ad41fea75384455abb = L.marker(
+                [40.83997, -73.36801],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_38bf0b7e6510fbc6d3ffe80b25331650 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3eb853900d787ae8b7db26e4cdbfe340 = $(`<div id="html_3eb853900d787ae8b7db26e4cdbfe340" style="width: 100.0%; height: 100.0%;">     <b>Rexer Farm Stand</b><br>     1028 Park Avenue<br>     Huntington     </div>`)[0];
+                popup_38bf0b7e6510fbc6d3ffe80b25331650.setContent(html_3eb853900d787ae8b7db26e4cdbfe340);
+            
+        
+
+        marker_4e16b8998ea894ad41fea75384455abb.bindPopup(popup_38bf0b7e6510fbc6d3ffe80b25331650)
+        ;
+
+        
+    
+    
+            marker_4e16b8998ea894ad41fea75384455abb.bindTooltip(
+                `<div>
+                     Rexer Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7686a4f506e97e0c79accd085d7e996e = L.marker(
+                [41.00107, -72.29137],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_e596e1f54be970930fddec3aee7f1ad1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdfa2a047c2861a96712929f904ccdc0 = $(`<div id="html_bdfa2a047c2861a96712929f904ccdc0" style="width: 100.0%; height: 100.0%;">     <b>Sag Harbor Farmers' Market</b><br>     Bay and Burke Streets<br>     Sag Harbor     </div>`)[0];
+                popup_e596e1f54be970930fddec3aee7f1ad1.setContent(html_bdfa2a047c2861a96712929f904ccdc0);
+            
+        
+
+        marker_7686a4f506e97e0c79accd085d7e996e.bindPopup(popup_e596e1f54be970930fddec3aee7f1ad1)
+        ;
+
+        
+    
+    
+            marker_7686a4f506e97e0c79accd085d7e996e.bindTooltip(
+                `<div>
+                     Sag Harbor Farmers' Market
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_609881c6f027010e1b73f9e3d569733c = L.marker(
+                [40.80186, -73.39911],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_dd829f77d51e6a939bc7744612129d04 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_34f94becbb1808bb47f9cb53d8774a2f = $(`<div id="html_34f94becbb1808bb47f9cb53d8774a2f" style="width: 100.0%; height: 100.0%;">     <b>Schneider's Farm Stand</b><br>     316 Old Country Road<br>     Melville              <br><a href="http://www.schneidersfarmmelville.com" target="_blank">Visit Website</a>         </div>`)[0];
+                popup_dd829f77d51e6a939bc7744612129d04.setContent(html_34f94becbb1808bb47f9cb53d8774a2f);
+            
+        
+
+        marker_609881c6f027010e1b73f9e3d569733c.bindPopup(popup_dd829f77d51e6a939bc7744612129d04)
+        ;
+
+        
+    
+    
+            marker_609881c6f027010e1b73f9e3d569733c.bindTooltip(
+                `<div>
+                     Schneider's Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bacd52b9c314002854be38b438562bc8 = L.marker(
+                [40.77235, -73.24614],
+                {
+}
+            ).addTo(marker_cluster_17db551e8d72089a69eb261e15b02ab3);
+        
+    
+        var popup_64512cc6156cc9745720ef82de8ed5b1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_484a7c0eef4c7865e5b617022adf9d49 = $(`<div id="html_484a7c0eef4c7865e5b617022adf9d49" style="width: 100.0%; height: 100.0%;">     <b>Thera Farms Farm Stand</b><br>     1725 Brentwood Road<br>     Brentwood     </div>`)[0];
+                popup_64512cc6156cc9745720ef82de8ed5b1.setContent(html_484a7c0eef4c7865e5b617022adf9d49);
+            
+        
+
+        marker_bacd52b9c314002854be38b438562bc8.bindPopup(popup_64512cc6156cc9745720ef82de8ed5b1)
+        ;
+
+        
+    
+    
+            marker_bacd52b9c314002854be38b438562bc8.bindTooltip(
+                `<div>
+                     Thera Farms Farm Stand
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_17db551e8d72089a69eb261e15b02ab3.addTo(map_f708ba9dd3b1611f76ed153de7a2b770);
+        
+    
+            tile_layer_d8ca592d1e9a5ac53bb0ce1a46c7951a.addTo(map_f708ba9dd3b1611f76ed153de7a2b770);
+        
+    
+            marker_cluster_17db551e8d72089a69eb261e15b02ab3.addTo(map_f708ba9dd3b1611f76ed153de7a2b770);
+        
+</script>
+</html>
